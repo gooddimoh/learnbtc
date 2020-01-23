@@ -4,7 +4,6 @@
 @section('title', __('labels.backend.pages.title').' | '.app_name())
 
 @section('content')
-
     <div class="card">
         <div class="card-header">
             <h3 class="page-title d-inline">@lang('labels.backend.pages.title')</h3>

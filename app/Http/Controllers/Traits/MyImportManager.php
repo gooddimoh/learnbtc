@@ -9,6 +9,7 @@ class MyImportManager extends Manager
     public function getDirectories(){
         return $this->files;
     }
+
     public function importTranslationsFile( $replace = false, $base = null )
     {
         $counter = 0;

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a218a5d5-e263-43a1-84b9-6cb95a6ef769" name="learnwithbtc" url="http://185.61.154.208">
+        <fileTransfer host="185.61.154.208" port="21" rootFolder="/www" accessType="FTPS">
+          <advancedOptions>
+            <advancedOptions compatibilityMode="true" dataProtectionLevel="Private" forceListCommand="true" keepAliveCommand="PWD" maxConnections="100" passiveMode="true" shareSSLContext="true" showHiddenFiles="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
