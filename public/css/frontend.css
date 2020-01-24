@@ -6200,3 +6200,18 @@ ul.product-tab li.active:after {
   display: none;
 }
 
+.navbar-menu .float-right a { color: black; }
+.navbar-menu .float-right span { color: black; }
+
+#slide a { color: black!important; }
+#slide span { color: black!important; }
+
+
+.nav-menu.ul-li a {
+  color: #000;
+}
+
+.nav-menu.ul-li a {
+  color: #fff;
+}
+

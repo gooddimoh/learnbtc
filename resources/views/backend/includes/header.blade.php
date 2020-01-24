@@ -3,13 +3,12 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="{{ route('admin.dashboard') }}">
-        <img class="navbar-brand-full" src="{{asset('storage/logos/'.config('logo_b_image'))}}"  height="25" alt="Square Logo">
+        <img class="navbar-brand-full" src="https://www.pinclipart.com/picdir/middle/382-3823373_d2s-learning-management-system-learning-management-system-logo.png"  height="25" alt="Square Logo">
         <img class="navbar-brand-minimized" src="{{asset('storage/logos/'.config('logo_popup'))}}" height="30" alt="Square Logo">
     </a>
     <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
         <span class="navbar-toggler-icon"></span>
     </button>
-
     <ul class="nav navbar-nav d-md-down-none">
         <li class="nav-item px-3">
             <a class="nav-link" href="{{ route('frontend.index') }}"><i class="icon-home"></i></a>
@@ -23,7 +22,6 @@
                 {{--<a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">--}}
                     {{--<span class="d-md-down-none">@lang('menus.language-picker.language') ({{ strtoupper(app()->getLocale()) }})</span>--}}
                 {{--</a>--}}
-
                 {{--@include('includes.partials.lang')--}}
             {{--</li>--}}
         {{--@endif--}}
@@ -38,7 +36,6 @@
             </li>
         @endif
     </ul>
-
     <ul class="nav navbar-nav ml-auto mr-4">
         <li class="nav-item d-md-down-none">
             <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -52,8 +49,6 @@
                 <div class="unreadMessages">
                    <p class="mb-0 text-center py-2">@lang('navs.general.no_messages')</p>
                 </div>
-
-
             </div>
         </li>
 
@@ -84,7 +79,6 @@
           </div>
         </li>
     </ul>
-
     {{--<button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">--}}
         {{--<span class="navbar-toggler-icon"></span>--}}
     {{--</button>--}}

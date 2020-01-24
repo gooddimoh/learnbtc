@@ -11,6 +11,7 @@
 .header-info li:last-child:after {
   display: none;
 }
+
 div#main-menu { background-color: #000000; }
 select.form-control:not([size]):not([multiple]){ height: calc(2.25rem + 24px)!important; }
 .dataTables_wrapper .dataTables_processing {

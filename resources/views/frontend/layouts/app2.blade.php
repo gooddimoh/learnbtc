@@ -84,8 +84,8 @@
                     <div class="container">
                         <div class="navbar-default">
                             <div class="navbar-header float-left">
-                                <a class="navbar-brand text-uppercase" href="{{url('/')}}"><img
-                                            src={{asset("storage/logos/".config('logo_w_image'))}} alt="logo"></a>
+                                <a class="navbar-brand text-uppercase" href="{{url('/')}}"><img width="40px" height="40px"
+                                            src="https://www.pinclipart.com/picdir/middle/382-3823373_d2s-learning-management-system-learning-management-system-logo.png" alt="logo"></a>
                             </div><!-- /.navbar-header -->
 
 

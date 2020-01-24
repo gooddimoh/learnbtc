@@ -224,5 +224,20 @@ function processAjaxTables() {
             $(this).siblings('.actions').html('<a href="' + window.route_mass_crud_entries_destroy + '" class="btn btn-xs btn-danger js-delete-selected" style="margin-top:0.755em;margin-left: 20px;">Delete selected</a>');
         }
     });
+}
 
+if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+    $(window).scroll(function(){
+        $(".slides_layover").removeClass('showing_layover');
+        $("#slides_effect").show();
+        $(".nav-menu.ul-li a").css("color","black");
+        $(".main-menu-container span").css("color","white");
+        $(".nav-menu ul-li a").css("color","white");
+    });
+}
+
+var d = document.getElementsByClassName("navbar-menu");
+var topPos = d.offsetTop;
+if (topPos > 10) {
+ alert("offtop");
 }

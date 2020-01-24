@@ -12,7 +12,7 @@
                     <div class="col-md-4">
                         <div class="footer-widget ">
                             <div class="footer-logo mb35">
-                                <img src="{{asset("storage/logos/".config('logo_b_image'))}}" alt="logo">
+                                <img width="40px" height="40px" src="https://www.pinclipart.com/picdir/middle/382-3823373_d2s-learning-management-system-learning-management-system-logo.png" alt="logo">
                             </div>
                             @if($footer_data->short_description->status == 1)
                                 <div class="footer-about-text">

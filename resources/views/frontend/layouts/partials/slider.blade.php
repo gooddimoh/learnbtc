@@ -73,7 +73,7 @@
                             <div class="about-btn text-center">
                                 @foreach($content->buttons as $button)
                                     <div class="genius-btn text-center text-uppercase ul-li-block bold-font">
-                                        <a href="{{$button->link}}">{{$button->label}} <i
+                                        <a color="#000000" href="{{$button->link}}">{{$button->label}} <i
                                                     class="fas fa-caret-right"></i></a>
                                     </div>
                                 @endforeach
