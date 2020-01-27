@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use CoinbaseCommerce\ApiClient;
 
-class BlockchainAPIController
-{
+class BlockchainAPIController {
     private $accessToken = "";
     private $refreshToken = "";
 
@@ -36,6 +35,9 @@ class BlockchainAPIController
 
     public function checkfunctions()
     {
+        echo "create function";
+        echo "create function";
+        echo "create function";
         echo "create function";
     }
 }
