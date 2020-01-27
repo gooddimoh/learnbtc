@@ -8,8 +8,7 @@ use App\Models\Category;
 use App\Models\Tag;
 use Illuminate\Http\Request;
 
-class BlogController extends Controller
-{
+class BlogController extends Controller {
 
     private $path;
 
