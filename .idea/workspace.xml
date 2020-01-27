@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="854c60c3-bb30-4f87-8675-8f4f95edef59" name="Default" comment="update some javascript and css">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
     </list>
@@ -95,7 +94,7 @@
       <workItem from="1579799852338" duration="1016000" />
       <workItem from="1579800914490" duration="5405000" />
       <workItem from="1579807954995" duration="4685000" />
-      <workItem from="1579814608951" duration="17246000" />
+      <workItem from="1579814608951" duration="20558000" />
     </task>
     <task id="LOCAL-00001" summary="update some javascript and css">
       <created>1579902718896</created>
@@ -104,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579902718896</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update some javascript and css">
+      <created>1580129711633</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580129711633</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,10 +139,10 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="143" y="123" key="SettingsEditor/0.0.1280.984@0.0.1280.984" timestamp="1579806898407" />
-    <state x="232" y="227" key="Vcs.Push.Dialog.v2" timestamp="1579902817281">
+    <state x="232" y="227" key="Vcs.Push.Dialog.v2" timestamp="1580133998560">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="232" y="227" key="Vcs.Push.Dialog.v2/0.0.1280.984@0.0.1280.984" timestamp="1579902817281" />
+    <state x="232" y="227" key="Vcs.Push.Dialog.v2/0.0.1280.984@0.0.1280.984" timestamp="1580133998560" />
     <state x="504" y="399" key="WebDeployment.AddServerDialog.v.1" timestamp="1579800429682">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -149,10 +155,18 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="112" y="128" width="1065" height="856" key="find.popup/0.0.1280.984@0.0.1280.984" timestamp="1579901446612" />
-    <state x="364" y="294" key="git4idea.merge.GitPullDialog" timestamp="1579902870578">
+    <state x="364" y="294" key="git4idea.merge.GitMergeDialog" timestamp="1580134045508">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="364" y="294" key="git4idea.merge.GitPullDialog/0.0.1280.984@0.0.1280.984" timestamp="1579902870578" />
+    <state x="364" y="294" key="git4idea.merge.GitMergeDialog/0.0.1280.984@0.0.1280.984" timestamp="1580134045508" />
+    <state x="364" y="294" key="git4idea.merge.GitPullDialog" timestamp="1580134055179">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="364" y="294" key="git4idea.merge.GitPullDialog/0.0.1280.984@0.0.1280.984" timestamp="1580134055179" />
+    <state x="296" y="221" key="run.anything.popup" timestamp="1580129864561">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="296" y="221" key="run.anything.popup/0.0.1280.984@0.0.1280.984" timestamp="1580129864561" />
     <state x="457" y="376" key="webDeployment.PermissionsDialog" timestamp="1579884932833">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
