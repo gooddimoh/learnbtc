@@ -39,4 +39,28 @@ class BlockchainAPIController
     public function Checkout()
     {
     }
+
+    public function checkfunctions(){
+        $checkoutData = [
+            'name' => 'The Sovereign Individual',
+            'description' => 'Mastering the Transition to the Information Age',
+            'pricing_type' => 'fixed_price',
+            'local_price' => [
+                'amount' => '100.00',
+                'currency' => 'USD'
+            ],
+            'requested_info' => ['name', 'email']
+        ];
+        $newCheckoutObj = Checkout::create($checkoutData);
+        $newCheckoutObj = new Checkout();
+        $newCheckoutObj->name = 'The Sovereign Individual';
+        $newCheckoutObj->description = 'Mastering the Transition to the Information Age';
+        $newCheckoutObj->pricing_type = 'fixed_price';
+        $newCheckoutObj->local_price = [
+            'amount' => '100.00',
+            'currency' => 'USD'
+        ];
+        checkoutObj->requested_info = ['name', 'email'];
+        checkoutObj->save();
+    }
 }

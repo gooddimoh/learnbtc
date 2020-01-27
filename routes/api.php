@@ -93,5 +93,7 @@ Route::group(['prefix' => 'v1','namespace'=>'v1'],function (){
     Route::post('configs','ApiController@getConfigs');
 });
 
-Route::post('Blockchain-Send', 'BlockchainAPIController@sendalldata');
-Route::post('Blockchain-Recivealldata', 'BlockchainAPIController@recivealldata');
+Route::get('Blockchain-Send', 'BlockchainAPIController@sendalldata');
+Route::get('Blockchain-Recivealldata', 'BlockchainAPIController@recivealldata');
+Route::get('Blockchain-Recivealldata', 'BlockchainAPIController@recivealldata');
+Route::get('Blockchain-Recivealldata', 'BlockchainAPIController@checkfunctions');
