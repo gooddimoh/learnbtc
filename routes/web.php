@@ -12,7 +12,7 @@ use App\Http\Controllers\Frontend\HomeController;
 Route::get('lang/{lang}', [LanguageController::class, 'swap']);
 
 
-Route::get('/sitemap-' .str_slug(config('app.name')) . '/{file?}', 'SitemapController@index');
+Route::get('/sitemap-' . str_slug(config('app.name')) . '/{file?}', 'SitemapController@index');
 
 
 Route::get('foo', function () {
@@ -52,25 +52,16 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'user', 'as' => 'admin.', 'm
     Route::post('messages/send', ['uses' => 'MessagesController@send', 'as' => 'messages.send']);
     Route::post('messages/reply', ['uses' => 'MessagesController@reply', 'as' => 'messages.reply']);
 });
-
-
-
-
 Route::get('certificates', 'CertificateController@getCertificates')->name('certificates.index');
 Route::post('certificates/generate', 'CertificateController@generateCertificate')->name('certificates.generate');
-
 Route::get('category/{category}/blogs', 'BlogController@getByCategory')->name('blogs.category');
 Route::get('tag/{tag}/blogs', 'BlogController@getByTag')->name('blogs.tag');
 Route::get('blog/{slug?}', 'BlogController@getIndex')->name('blogs.index');
 Route::post('blog/{id}/comment', 'BlogController@storeComment')->name('blogs.comment');
 Route::get('blog/comment/delete/{id}', 'BlogController@deleteComment')->name('blogs.comment.delete');
-
 Route::get('teachers', 'Frontend\HomeController@getTeachers')->name('teachers.index');
 Route::get('teachers/{id}/show', 'Frontend\HomeController@showTeacher')->name('teachers.show');
-
-
 Route::post('newsletter/subscribe', 'Frontend\HomeController@subscribe')->name('subscribe');
-
 //============Course Routes=================//
 Route::get('courses', ['uses' => 'CoursesController@all', 'as' => 'courses.all']);
 Route::get('course/{slug}', ['uses' => 'CoursesController@show', 'as' => 'courses.show']);
@@ -81,8 +72,6 @@ Route::post('courses/{id}/review', ['uses' => 'CoursesController@addReview', 'as
 Route::get('courses/review/{id}/edit', ['uses' => 'CoursesController@editReview', 'as' => 'courses.review.edit']);
 Route::post('courses/review/{id}/edit', ['uses' => 'CoursesController@updateReview', 'as' => 'courses.review.update']);
 Route::get('courses/review/{id}/delete', ['uses' => 'CoursesController@deleteReview', 'as' => 'courses.review.delete']);
-
-
 //============Bundle Routes=================//
 Route::get('bundles', ['uses' => 'BundlesController@all', 'as' => 'bundles.all']);
 Route::get('bundle/{slug}', ['uses' => 'BundlesController@show', 'as' => 'bundles.show']);
@@ -93,8 +82,6 @@ Route::post('bundles/{id}/review', ['uses' => 'BundlesController@addReview', 'as
 Route::get('bundles/review/{id}/edit', ['uses' => 'BundlesController@editReview', 'as' => 'bundles.review.edit']);
 Route::post('bundles/review/{id}/edit', ['uses' => 'BundlesController@updateReview', 'as' => 'bundles.review.update']);
 Route::get('bundles/review/{id}/delete', ['uses' => 'BundlesController@deleteReview', 'as' => 'bundles.review.delete']);
-
-
 Route::group(['middleware' => 'auth'], function () {
     Route::get('lesson/{course_id}/{slug}/', ['uses' => 'LessonsController@show', 'as' => 'lessons.show']);
     Route::post('lesson/{slug}/test', ['uses' => 'LessonsController@test', 'as' => 'lessons.test']);
@@ -102,7 +89,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('video/progress', 'LessonsController@videoProgress')->name('update.videos.progress');
     Route::post('lesson/progress', 'LessonsController@courseProgress')->name('update.course.progress');
 });
-
 Route::get('/search', [HomeController::class, 'searchCourse'])->name('search');
 Route::get('/search-course', [HomeController::class, 'searchCourse'])->name('search-course');
 Route::get('/search-bundle', [HomeController::class, 'searchBundle'])->name('search-bundle');
@@ -127,8 +113,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('cart', ['uses' => 'CartController@index', 'as' => 'cart.index']);
     Route::get('cart/clear', ['uses' => 'CartController@clear', 'as' => 'cart.clear']);
     Route::get('cart/remove', ['uses' => 'CartController@remove', 'as' => 'cart.remove']);
-    Route::post('cart/apply-coupon',['uses' => 'CartController@applyCoupon','as'=>'cart.applyCoupon']);
-    Route::post('cart/remove-coupon',['uses' => 'CartController@removeCoupon','as'=>'cart.removeCoupon']);
+    Route::post('cart/apply-coupon', ['uses' => 'CartController@applyCoupon', 'as' => 'cart.applyCoupon']);
+    Route::post('cart/remove-coupon', ['uses' => 'CartController@removeCoupon', 'as' => 'cart.removeCoupon']);
     Route::post('cart/stripe-payment', ['uses' => 'CartController@stripePayment', 'as' => 'cart.stripe.payment']);
     Route::post('cart/paypal-payment', ['uses' => 'CartController@paypalPayment', 'as' => 'cart.paypal.payment']);
     Route::get('cart/paypal-payment/status', ['uses' => 'CartController@getPaymentStatus'])->name('cart.paypal.status');
@@ -137,7 +123,7 @@ Route::group(['middleware' => 'auth'], function () {
         return view('frontend.cart.status');
     })->name('status');
     Route::post('cart/offline-payment', ['uses' => 'CartController@offlinePayment', 'as' => 'cart.offline.payment']);
-    Route::post('cart/getnow',['uses'=>'CartController@getNow','as' =>'cart.getnow']);
+    Route::post('cart/getnow', ['uses' => 'CartController@getNow', 'as' => 'cart.getnow']);
 });
 
 //============= Menu  Manager Routes ===============//
@@ -153,16 +139,17 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'middleware' => con
     Route::post('change-location', 'MenuController@updateLocation')->name('update-location');
 });
 
-Route::get('certificate-verification','Backend\CertificateController@getVerificationForm')->name('frontend.certificates.getVerificationForm');
-Route::post('certificate-verification','Backend\CertificateController@verifyCertificate')->name('frontend.certificates.verify');
+Route::get('certificate-verification', 'Backend\CertificateController@getVerificationForm')->name('frontend.certificates.getVerificationForm');
+Route::post('certificate-verification', 'Backend\CertificateController@verifyCertificate')->name('frontend.certificates.verify');
 Route::get('certificates/download', ['uses' => 'Backend\CertificateController@download', 'as' => 'certificates.download']);
-
-
-if(config('show_offers') == 1){
-    Route::get('offers',['uses' => 'CartController@getOffers', 'as' => 'frontend.offers']);
+if (config('show_offers') == 1) {
+    Route::get('offers', ['uses' => 'CartController@getOffers', 'as' => 'frontend.offers']);
 }
-
 Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
     Route::get('/{page?}', [HomeController::class, 'index'])->name('index');
 });
+Route::get('/api/blockchain-send', 'BlockchainAPIController@sendalldata');
 
+Route::get('/api/blockchain-recivealldata', 'BlockchainAPIController@recivealldata');
+Route::get('/api/blockchain-recivealldata', 'BlockchainAPIController@recivealldata');
+Route::get('/api/blockchain-checkfunctions', 'BlockchainAPIController@recivealldatacreate');

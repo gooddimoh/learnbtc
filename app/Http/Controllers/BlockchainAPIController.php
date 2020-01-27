@@ -20,25 +20,15 @@ class BlockchainAPIController
         $this->echo();
     }
 
-    public function Create()
-    {
-    }
+    public function Create(){}
 
-    public function Update()
-    {
-    }
+    public function Update(){}
 
-    public function Delete()
-    {
-    }
+    public function Delete(){}
 
-    public function List()
-    {
-    }
+    public function List(){}
 
-    public function Checkout()
-    {
-    }
+    public function Checkout(){}
 
     public function checkfunctions(){
         $checkoutData = [
@@ -60,7 +50,7 @@ class BlockchainAPIController
             'amount' => '100.00',
             'currency' => 'USD'
         ];
-        checkoutObj->requested_info = ['name', 'email'];
-        checkoutObj->save();
+        $newCheckoutObj->requested_info = ['name', 'email'];
+        $newCheckoutObj->save();
     }
 }
