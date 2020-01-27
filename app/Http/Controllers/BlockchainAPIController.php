@@ -57,6 +57,6 @@ class BlockchainAPIController
 //        ];
 //        $newCheckoutObj->requested_info = ['name', 'email'];
 //        $newCheckoutObj->save();
-
+        echo "create function";
     }
 }
