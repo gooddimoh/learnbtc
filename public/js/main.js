@@ -13,7 +13,7 @@ $(document).ready(function () {
         activeSub.parent().parent().addClass('open');
     }
 
-    $(document).on('click','.dataTable input[type=checkbox]',function () {
+    $(document).on('click', '.dataTable input[type=checkbox]', function () {
         $(this).parents('tr').toggleClass('selected');
     })
     window.dtDefaultOptions = {
@@ -226,18 +226,15 @@ function processAjaxTables() {
     });
 }
 
-if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-    $(window).scroll(function(){
-        $(".slides_layover").removeClass('showing_layover');
-        $("#slides_effect").show();
-        $(".nav-menu.ul-li a").css("color","black");
-        $(".main-menu-container span").css("color","white");
-        $(".nav-menu ul-li a").css("color","white");
-    });
-}
+// $(window).scroll(function(){var offset = $(".navbar-default").offset();  if(offset.top < 140){ $(".nav-menu ul-li a").css("color","black")}});
+// if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+//     $(window).scroll(function () {
+//         $(".slides_layover").removeClass('showing_layover');
+//         $("#slides_effect").show();
+//         $(".nav-menu.ul-li a").css("color", "black");
+//         $(".main-menu-container span").css("color", "white");
+//         $(".nav-menu ul-li a").css("color", "white");
+//     });
+// }
 
-var d = document.getElementsByClassName("navbar-menu");
-var topPos = d.offsetTop;
-if (topPos > 10) {
- alert("offtop");
-}
+
