@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\Frontend\HomeController;
-use App\Http\Controllers\CoinbaseCommerce\ApiClient;
+use App\Http\Controllers\BlockchainAPI;
 
 /*
  * Global Routes

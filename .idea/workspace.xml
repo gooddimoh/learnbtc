@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="854c60c3-bb30-4f87-8675-8f4f95edef59" name="Default" comment="update some javascript and css">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlockchainAPI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,10 +171,10 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="347" y="318" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1579814609064" />
-    <state x="112" y="128" width="1065" height="856" key="find.popup" timestamp="1580143310141">
+    <state x="112" y="128" width="1065" height="856" key="find.popup" timestamp="1580151840943">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="112" y="128" width="1065" height="856" key="find.popup/0.0.1280.984@0.0.1280.984" timestamp="1580143310141" />
+    <state x="112" y="128" width="1065" height="856" key="find.popup/0.0.1280.984@0.0.1280.984" timestamp="1580151840943" />
     <state x="364" y="294" key="git4idea.merge.GitMergeDialog" timestamp="1580134045508">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
