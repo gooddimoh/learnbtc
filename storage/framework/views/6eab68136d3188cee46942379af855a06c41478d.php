@@ -773,10 +773,7 @@
                                         <?php echo e(html()->label(
                                                 html()->checkbox('paypal__active', config('paypal.active') ? true : false,1)
                                                       ->class('switch-input')->value(1)
-                                                . '<span class="switch-label"></span><span class="switch-handle"></span>')
-
-                                            ->class('switch switch-sm switch-3d switch-primary')); ?>
-
+                                                . '<span class="switch-label"></span><span class="switch-handle"></span>')->class('switch switch-sm switch-3d switch-primary')); ?>
                                         <a target="_blank" href="https://developer.paypal.com/developer/applications/"
                                            class="float-right font-italic font-weight-bold"><?php echo e(__('labels.backend.general_settings.payment_settings.how_to_paypal')); ?></a>
                                     </div>

@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="854c60c3-bb30-4f87-8675-8f4f95edef59" name="Default" comment="update some javascript and css">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/labels.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/labels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/6eab68136d3188cee46942379af855a06c41478d.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6eab68136d3188cee46942379af855a06c41478d.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +139,10 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="420" y="249" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1579800303628" />
+    <state x="309" y="325" key="NewPhpClassDialog" timestamp="1580137239867">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="309" y="325" key="NewPhpClassDialog/0.0.1280.984@0.0.1280.984" timestamp="1580137239867" />
     <state x="143" y="123" key="SettingsEditor" timestamp="1579806898407">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
@@ -150,10 +159,10 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="347" y="318" key="com.intellij.ide.util.TipDialog/0.0.1280.984@0.0.1280.984" timestamp="1579814609064" />
-    <state x="112" y="128" width="1065" height="856" key="find.popup" timestamp="1579901446612">
+    <state x="112" y="128" width="1065" height="856" key="find.popup" timestamp="1580143310141">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="112" y="128" width="1065" height="856" key="find.popup/0.0.1280.984@0.0.1280.984" timestamp="1579901446612" />
+    <state x="112" y="128" width="1065" height="856" key="find.popup/0.0.1280.984@0.0.1280.984" timestamp="1580143310141" />
     <state x="364" y="294" key="git4idea.merge.GitMergeDialog" timestamp="1580134045508">
       <screen x="0" y="0" width="1280" height="984" />
     </state>

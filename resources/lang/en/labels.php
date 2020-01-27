@@ -80,6 +80,7 @@ return array (
         array (
           'stripe' => 'Credit / Debit Card (Stripe Payment Gateway)',
           'paypal' => 'Paypal',
+          'coinbase' => 'coinbase',
           'offline' => 'Offline',
           'title' => 'Payment Type',
         ),
