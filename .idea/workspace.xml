@@ -4,11 +4,7 @@
     <list default="true" id="854c60c3-bb30-4f87-8675-8f4f95edef59" name="Default" comment="update some javascript and css">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/labels.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/labels.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/6eab68136d3188cee46942379af855a06c41478d.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/6eab68136d3188cee46942379af855a06c41478d.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580129711633</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update some javascript and css">
+      <created>1580150594252</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580150594252</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,10 +135,10 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="232" y="152" key="#Deployment/0.0.1280.984@0.0.1280.984" timestamp="1579805383339" />
-    <state x="238" y="89" key="CommitChangelistDialog2" timestamp="1580150566683">
+    <state x="238" y="89" key="CommitChangelistDialog2" timestamp="1580150592075">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state x="238" y="89" key="CommitChangelistDialog2/0.0.1280.984@0.0.1280.984" timestamp="1580150566683" />
+    <state x="238" y="89" key="CommitChangelistDialog2/0.0.1280.984@0.0.1280.984" timestamp="1580150592075" />
     <state x="420" y="249" key="FileChooserDialogImpl" timestamp="1579800303628">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
