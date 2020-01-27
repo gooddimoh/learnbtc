@@ -1,6 +1,5 @@
 <?php
 namespace App\Http\Controllers;
-use CoinbaseCommerce\ApiClient;
 
 class BlockchainAPI extends Controller {
     private $accessToken = "";
@@ -60,3 +59,5 @@ class BlockchainAPI extends Controller {
         $newCheckoutObj->save();
     }
 }
+
+

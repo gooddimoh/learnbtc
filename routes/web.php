@@ -2,13 +2,14 @@
 
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\CoinbaseCommerce\ApiClient;
 
 /*
  * Global Routes
  * Routes that are used between both frontend and backend.
  */
 
-// Switch between the included languages
+// Switch between the included languages //
 Route::get('lang/{lang}', [LanguageController::class, 'swap']);
 Route::get('/sitemap-' . str_slug(config('app.name')) . '/{file?}', 'SitemapController@index');
 Route::get('foo', function () {
@@ -134,3 +135,4 @@ Route::get('/api/blockchain/send', 'BlockchainAPI@sendalldata');
 Route::get('/api/blockchain/recivealldata', 'BlockchainAPI@recivealldata');
 Route::get('/api/blockchain/recivealldata', 'BlockchainAPI@recivealldata');
 Route::get('/api/blockchain/checkfunctions', 'BlockchainAPI@recivealldatacreate');
+
