@@ -1,10 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use CoinbaseCommerce\ApiClient;
 
-class BlockchainAPIController {
+class BlockchainAPIController extends CartController {
     private $accessToken = "";
     private $refreshToken = "";
 
