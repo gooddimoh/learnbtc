@@ -1,12 +1,16 @@
 <?php
+
 namespace App\Http\Controllers;
+
 use CoinbaseCommerce\ApiClient;
 
-class BlockchainAPI {
+class BlockchainAPI extends Controller
+{
     private $accessToken = "";
     private $refreshToken = "";
 
-    public function Set(){
+    public function Set()
+    {
         $this->accessToken = "9sIUpXAW1JxHkILQ";
         $this->refreshToken = "d2vYk1WoPmL55L2VE4YG2OfyJzC0ZY31";
         $configuration = Configuration::oauth($this->accessToken, $this->refreshToken);

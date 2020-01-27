@@ -187,7 +187,7 @@ class HomeController extends Controller
                 session()->flash('alert', "Something went wrong, Please try again Later");
                 return back();
             }
-        }else{
+        } else {
             session()->flash('alert', "Please configure Newsletter from Admin");
             return back();
         }
@@ -251,7 +251,7 @@ class HomeController extends Controller
 
         if ($request->category != null) {
             $category = Category::find((int)$request->category);
-            if($category){
+            if ($category) {
                 $ids = $category->courses->pluck('id')->toArray();
                 $types = ['popular', 'trending', 'featured'];
                 if ($category) {
