@@ -19,17 +19,11 @@ class BlockchainAPIController
 //        $this->echo();
     }
 
-    public function Create()
-    {
-    }
+    public function Create(){}
 
-    public function Update()
-    {
-    }
+    public function Update(){}
 
-    public function Delete()
-    {
-    }
+    public function Delete(){}
 
     public function List()
     {
