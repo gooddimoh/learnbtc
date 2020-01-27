@@ -10,16 +10,11 @@ use App\Http\Controllers\Frontend\HomeController;
 
 // Switch between the included languages
 Route::get('lang/{lang}', [LanguageController::class, 'swap']);
-
-
 Route::get('/sitemap-' . str_slug(config('app.name')) . '/{file?}', 'SitemapController@index');
-
-
 Route::get('foo', function () {
     return public_path('storage/uploads');
     //return 'Hello World';
 });
-
 /*
  * Frontend Routes
  * Namespaces indicate folder structure
@@ -27,7 +22,6 @@ Route::get('foo', function () {
 Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
     include_route_files(__DIR__ . '/frontend/');
 });
-
 /*
  * Backend Routes
  * Namespaces indicate folder structure
@@ -43,9 +37,7 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'user', 'as' => 'admin.', 'm
      */
     include_route_files(__DIR__ . '/backend/');
 });
-
 Route::group(['namespace' => 'Backend', 'prefix' => 'user', 'as' => 'admin.', 'middleware' => 'auth'], function () {
-
 //==== Messages Routes =====//
     Route::get('messages', ['uses' => 'MessagesController@index', 'as' => 'messages']);
     Route::post('messages/unread', ['uses' => 'MessagesController@getUnreadMessages', 'as' => 'messages.unread']);
@@ -93,20 +85,11 @@ Route::get('/search', [HomeController::class, 'searchCourse'])->name('search');
 Route::get('/search-course', [HomeController::class, 'searchCourse'])->name('search-course');
 Route::get('/search-bundle', [HomeController::class, 'searchBundle'])->name('search-bundle');
 Route::get('/search-blog', [HomeController::class, 'searchBlog'])->name('blogs.search');
-
-
 Route::get('/faqs', 'Frontend\HomeController@getFaqs')->name('faqs');
-
-
 /*=============== Theme blades routes ends ===================*/
-
-
 Route::get('contact', 'Frontend\ContactController@index')->name('contact');
 Route::post('contact/send', 'Frontend\ContactController@send')->name('contact.send');
-
-
 Route::get('download', ['uses' => 'Frontend\HomeController@getDownload', 'as' => 'download']);
-
 Route::group(['middleware' => 'auth'], function () {
     Route::post('cart/checkout', ['uses' => 'CartController@checkout', 'as' => 'cart.checkout']);
     Route::post('cart/add', ['uses' => 'CartController@addToCart', 'as' => 'cart.addToCart']);
@@ -125,7 +108,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('cart/offline-payment', ['uses' => 'CartController@offlinePayment', 'as' => 'cart.offline.payment']);
     Route::post('cart/getnow', ['uses' => 'CartController@getNow', 'as' => 'cart.getnow']);
 });
-
 //============= Menu  Manager Routes ===============//
 Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'middleware' => config('menu.middleware')], function () {
     //Route::get('wmenuindex', array('uses'=>'\Harimayco\Menu\Controllers\MenuController@wmenuindex'));
@@ -138,7 +120,6 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'middleware' => con
     Route::post('save-custom-menu', 'MenuController@saveCustomMenu')->name('hcustomitem');
     Route::post('change-location', 'MenuController@updateLocation')->name('update-location');
 });
-
 Route::get('certificate-verification', 'Backend\CertificateController@getVerificationForm')->name('frontend.certificates.getVerificationForm');
 Route::post('certificate-verification', 'Backend\CertificateController@verifyCertificate')->name('frontend.certificates.verify');
 Route::get('certificates/download', ['uses' => 'Backend\CertificateController@download', 'as' => 'certificates.download']);
@@ -148,8 +129,8 @@ if (config('show_offers') == 1) {
 Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
     Route::get('/{page?}', [HomeController::class, 'index'])->name('index');
 });
-Route::get('/api/blockchain-send', 'BlockchainAPIController@sendalldata');
 
-Route::get('/api/blockchain-recivealldata', 'BlockchainAPIController@recivealldata');
-Route::get('/api/blockchain-recivealldata', 'BlockchainAPIController@recivealldata');
-Route::get('/api/blockchain-checkfunctions', 'BlockchainAPIController@recivealldatacreate');
+Route::get('/api/blockchain/send', 'BlockchainAPIController@sendalldata');
+Route::get('/api/blockchain/recivealldata', 'BlockchainAPIController@recivealldata');
+Route::get('/api/blockchain/recivealldata', 'BlockchainAPIController@recivealldata');
+Route::get('/api/blockchain/checkfunctions', 'BlockchainAPIController@recivealldatacreate');
