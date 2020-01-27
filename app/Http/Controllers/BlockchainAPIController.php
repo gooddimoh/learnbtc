@@ -55,6 +55,7 @@ class BlockchainAPI extends Controller {
             'amount' => '100.00',
             'currency' => 'USD'
         ];
+
         $newCheckoutObj->requested_info = ['name', 'email'];
         $newCheckoutObj->save();
     }
