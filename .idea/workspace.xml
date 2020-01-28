@@ -40,95 +40,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlockchainAPI.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-190">
-              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="136" column="82" lean-forward="true" selection-start-line="136" selection-start-column="82" selection-end-line="136" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_24_120730_create_orders_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Traits/Uuid.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CartController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="363" column="5" lean-forward="true" selection-start-line="363" selection-start-column="5" selection-end-line="363" selection-end-column="5" />
-              <folding>
-                <element signature="e#40#70#0#PHP" expanded="true" />
-                <element signature="e#891#1681#0#PHP" />
-                <element signature="e#1687#2490#0#PHP" />
-                <element signature="e#2496#3724#0#PHP" />
-                <element signature="e#3730#5523#0#PHP" />
-                <element signature="e#5529#5655#0#PHP" />
-                <element signature="e#5661#6276#0#PHP" />
-                <element signature="e#6628#7026#0#PHP" />
-                <element signature="e#7696#8094#0#PHP" />
-                <element signature="e#7354#9953#0#PHP" />
-                <element signature="e#9959#11034#0#PHP" />
-                <element signature="e#11040#12868#0#PHP" />
-                <element signature="e#12875#14030#0#PHP" />
-                <element signature="e#14036#14199#0#PHP" />
-                <element signature="e#14205#17200#0#PHP" />
-                <element signature="e#17207#18215#0#PHP" />
-                <element signature="e#18222#19391#0#PHP" />
-                <element signature="e#19397#20336#0#PHP" />
-                <element signature="e#20342#21301#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Repositories/RepositoryContract.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="228" selection-start-line="228" selection-end-line="241" selection-end-column="3" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="159">
+              <caret line="40" column="34" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/backend/settings/footer.blade.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="522" column="10" lean-forward="true" selection-start-line="522" selection-start-column="10" selection-end-line="522" selection-end-column="10" />
+            <state relative-caret-position="514">
+              <caret line="136" column="74" selection-start-line="136" selection-start-column="74" selection-end-line="136" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -137,7 +59,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>required</find>
       <find>API C</find>
       <find>path</find>
       <find>File::makeDirectory(</find>
@@ -151,7 +72,6 @@
       <find>composer</find>
       <find>Longman</find>
       <find>Offline Payment</find>
-      <find>recivealldatacreate</find>
       <find>offline_mode</find>
       <find>offline_payment</find>
       <find>coinbase</find>
@@ -167,6 +87,8 @@
       <find>makeOrder</find>
       <find>header</find>
       <find>footer</find>
+      <find>web.php</find>
+      <find>recivealldatacreate</find>
     </findStrings>
     <dirStrings>
       <dir>D:\OSPanelNew\OSPanel\domains\localhost\learnbtc.com\learnbtc</dir>
@@ -187,7 +109,6 @@
         <option value="$PROJECT_DIR$/uploaddumpmysql.sql" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/BvSshSftp/Bv002c9c/Bv003610/index.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$APPLICATION_CONFIG_DIR$/Composer Log/Composer Log.composerLog" />
         <option value="$PROJECT_DIR$/routes/breadcrumbs/backend/auth.php" />
         <option value="$PROJECT_DIR$/routes/console.php" />
@@ -203,6 +124,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/CartController.php" />
         <option value="$PROJECT_DIR$/public/js/main.js" />
         <option value="$PROJECT_DIR$/resources/views/backend/settings/footer.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
       </list>
     </option>
   </component>
@@ -749,6 +671,11 @@
               <item name="includes" type="462c0819:PsiDirectoryNode" />
               <item name="partials" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -808,7 +735,7 @@
       <workItem from="1579857080017" duration="4516000" />
       <workItem from="1579880368963" duration="7330000" />
       <workItem from="1580124249380" duration="2243000" />
-      <workItem from="1580194675113" duration="12644000" />
+      <workItem from="1580194675113" duration="13375000" />
     </task>
     <task id="LOCAL-00001" summary="db upload">
       <created>1579711718361</created>
@@ -835,7 +762,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54044000" />
+    <option name="totallyTimeSpent" value="54775000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -862,8 +789,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946237" weight="0.26258206" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.73507464" weight="0.51570964" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.7793177" visible="true" weight="0.16468039" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.22068231" side_tool="true" visible="true" weight="0.16468039" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.7793177" visible="true" weight="0.24052005" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.22068231" side_tool="true" visible="true" weight="0.24052005" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -1032,20 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlockchainAPI.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="136" column="82" lean-forward="true" selection-start-line="136" selection-start-column="82" selection-end-line="136" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_24_120730_create_orders_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1107,8 +1020,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/backend/settings/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="522" column="10" lean-forward="true" selection-start-line="522" selection-start-column="10" selection-end-line="522" selection-end-column="10" />
+        <state relative-caret-position="493">
+          <caret line="517" column="17" lean-forward="true" selection-start-line="517" selection-start-column="17" selection-end-line="517" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlockchainAPI.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="136" column="74" selection-start-line="136" selection-start-column="74" selection-end-line="136" selection-end-column="74" />
         </state>
       </provider>
     </entry>
