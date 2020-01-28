@@ -4,6 +4,7 @@ use App\Http\Controllers;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\BlockchainAPI;
+use App\Http\Controllers\BlogController;
 
 /*
  * Global Routes
