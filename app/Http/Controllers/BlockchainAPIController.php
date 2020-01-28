@@ -11,6 +11,7 @@ class BlockchainAPIController extends Controller {
 
     public function __construct()
     {
+        $new = ApiClient();
         $this->accessToken = "9sIUpXAW1JxHkILQ";
         $this->refreshToken = "d2vYk1WoPmL55L2VE4YG2OfyJzC0ZY31";
         $configuration = Configuration::oauth($this->accessToken, $this->refreshToken);
@@ -46,7 +47,7 @@ class BlockchainAPIController extends Controller {
             'pricing_type' => 'fixed_price',
             'local_price' => [
                 'amount' => '100.00',
-                'currency' => 'USD'
+                'currency' => 'Bitcoin'
             ],
             'requested_info' => ['name', 'email']
         ];
@@ -58,7 +59,7 @@ class BlockchainAPIController extends Controller {
         $newCheckoutObj->pricing_type = 'fixed_price';
         $newCheckoutObj->local_price = [
             'amount' => '100.00',
-            'currency' => 'USD'
+            'currency' => 'Bitcoin'
         ];
 
         $newCheckoutObj->requested_info = ['name', 'email'];
