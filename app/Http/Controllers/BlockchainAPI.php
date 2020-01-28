@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use CoinbaseCommerce\ApiClient;
 
-class BlockchainAPI extends Controller
-{
+class BlockchainAPI {
     private $accessToken = "";
     private $refreshToken = "";
 
