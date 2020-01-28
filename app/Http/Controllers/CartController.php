@@ -195,7 +195,6 @@ class CartController extends Controller
 
     public function stripePayment(Request $request)
     {
-
         //Making Order
         $order = $this->makeOrder();
 
@@ -217,6 +216,40 @@ class CartController extends Controller
             }
 
             //Generating Invoice
+            generateInvoice($order);
+
+            Cart::session(auth()->user()->id)->clear();
+            return redirect()->route('status');
+
+        } else {
+            $order->status = 2;
+            $order->save();
+            return redirect()->route('cart.index');
+        }
+    }
+
+    public function BitcoinCoinbase(Request $request){
+        //Making Order
+        $order = $this->makeOrder();
+
+        //Charging Customer
+        $status = $this->createStripeCharge($request);
+
+        if ($status == 'success') {
+            $order->status = 1;
+            $order->payment_type = 3;
+            $order->save();
+            foreach ($order->items as $orderItem) {
+                //Bundle Entries
+                if ($orderItem->item_type == Bundle::class) {
+                    foreach ($orderItem->item->courses as $course) {
+                        $course->students()->attach($order->user_id);
+                    }
+                }
+                $orderItem->item->students()->attach($order->user_id);
+            }
+
+            // Generating Invoice //
             generateInvoice($order);
 
             Cart::session(auth()->user()->id)->clear();
@@ -375,7 +408,6 @@ class CartController extends Controller
 
     }
 
-
     public function getNow(Request $request)
     {
         $order = new Order();
@@ -497,7 +529,6 @@ class CartController extends Controller
         return ['status' => 'fail', 'message' => trans('labels.frontend.cart.invalid_coupon')];
     }
 
-
     public function removeCoupon(Request $request){
 
         Cart::session(auth()->user()->id)->clearCartConditions();
@@ -526,7 +557,6 @@ class CartController extends Controller
         return ['status' => 'success', 'html' => $html];
 
     }
-
 
     private function makeOrder()
     {

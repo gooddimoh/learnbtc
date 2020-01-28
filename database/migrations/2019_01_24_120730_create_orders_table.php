@@ -18,7 +18,7 @@ class CreateOrdersTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->string('reference_no');
             $table->float('amount');
-            $table->integer('payment_type')->default(0)->comment('1-stripe/card, 2 - Paypal, 3 - Offline');
+            $table->integer('payment_type')->default(0)->comment('1-stripe/card, 2 - Paypal, 3 - Bitcoin, 4 - Offline');
             $table->integer('status')->default(0)->comment('0 - in progress, 1 - Completed');
             $table->timestamps();
         });

@@ -226,34 +226,17 @@ function processAjaxTables() {
     });
 }
 
-$(window).scroll(function () {
-    var offset = $(".navbar-default").offset();
-    if (offset.top < 140) {
-        $(".nav-menu ul li a").css("color", "black")
-    }
-});
-
-// if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-//     $(window).scroll(function () {
-//         $(".slides_layover").removeClass('showing_layover');
-//         $("#slides_effect").show();
-//         $(".nav-menu.ul-li a").css("color", "black");
-//         $(".main-menu-container span").css("color", "white");
-//         $(".nav-menu ul-li a").css("color", "white");
-//     });
-// }
-
 var offset = $(".navbar-default").offset();
-if (offset.top < 40) {
+if (window.pageYOffset < 45) {
     $(".nav-menu ul li a").css("color", "black");
-};
-
+}
 
 var offset = $(".navbar-default").offset();
 $(window).scroll(function () {
-    if (offset.top > 45) {
+    if (window.pageYOffset > 45) {
         $(".nav-menu ul li a").css("color", "white");
-        console.log(offset.top);
+    }
+    if (window.pageYOffset < 45) {
+        $(".nav-menu ul li a").css("color", "black");
     }
 });
-
