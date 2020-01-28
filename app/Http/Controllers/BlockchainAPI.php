@@ -50,6 +50,7 @@ class BlockchainAPI extends Controller
             ],
             'requested_info' => ['name', 'email']
         ];
+
         $newCheckoutObj = Checkout::create($checkoutData);
         $newCheckoutObj = new Checkout();
         $newCheckoutObj->name = 'The Sovereign Individual';
