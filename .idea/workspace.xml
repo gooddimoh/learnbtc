@@ -37,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlockchainAPI.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -49,8 +49,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="136" column="74" selection-start-line="136" selection-start-column="74" selection-end-line="136" selection-end-column="74" />
+            <state relative-caret-position="233">
+              <caret line="36" column="50" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/Auth/ChangePasswordController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -64,7 +73,6 @@
       <find>File::makeDirectory</find>
       <find>filesystems.php</find>
       <find>database.php</find>
-      <find>password</find>
       <find>amp</find>
       <find>login</find>
       <find>zach</find>
@@ -89,6 +97,7 @@
       <find>web.php</find>
       <find>recivealldatacreate</find>
       <find>recivealldatacreate</find>
+      <find>password</find>
     </findStrings>
     <dirStrings>
       <dir>D:\OSPanelNew\OSPanel\domains\localhost\learnbtc.com\learnbtc</dir>
@@ -126,6 +135,7 @@
         <option value="$PROJECT_DIR$/resources/views/backend/settings/footer.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/BlockchainAPI.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Frontend/Auth/ChangePasswordController.php" />
       </list>
     </option>
   </component>
@@ -343,6 +353,36 @@
               <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
               <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
@@ -701,6 +741,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OSPanelNew\OSPanel\domains\localhost\learnbtc.com\learnbtc\app\Http\Controllers\Frontend\Auth" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -736,7 +781,7 @@
       <workItem from="1579857080017" duration="4516000" />
       <workItem from="1579880368963" duration="7330000" />
       <workItem from="1580124249380" duration="2243000" />
-      <workItem from="1580194675113" duration="13849000" />
+      <workItem from="1580194675113" duration="14333000" />
     </task>
     <task id="LOCAL-00001" summary="db upload">
       <created>1579711718361</created>
@@ -763,7 +808,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55249000" />
+    <option name="totallyTimeSpent" value="55733000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -778,7 +823,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33848614" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33848614" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -790,7 +835,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946237" weight="0.26258206" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.73507464" weight="0.51570964" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.7793177" visible="true" weight="0.24052005" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.7793177" visible="true" weight="0.24052005" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.22068231" side_tool="true" visible="true" weight="0.24052005" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -878,7 +923,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="db upload" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/medialibrary.php" />
     <entry file="file://$PROJECT_DIR$/upload_dump_mysql" />
     <entry file="file://$PROJECT_DIR$/gitignoretest.php" />
     <entry file="file://$PROJECT_DIR$/server.php" />
@@ -1026,17 +1070,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="136" column="74" selection-start-line="136" selection-start-column="74" selection-end-line="136" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlockchainAPI.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="36" column="50" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/Auth/ChangePasswordController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
         </state>
       </provider>
     </entry>
