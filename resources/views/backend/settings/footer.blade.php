@@ -299,7 +299,7 @@
             });
 
             //========== Preset Footer Data ===========//
-            @if(config('footer_data'))
+                    @if(config('footer_data'))
             var footer_data = "{{config('footer_data')}}";
 
             footer_data = JSON.parse(footer_data.replace(/&quot;/g, '"'));
@@ -479,6 +479,20 @@
             });
         });
 
+        var offset = $(".navbar-default").offset();
+        if (window.pageYOffset < 45) {
+            $(".nav-menu ul li a").css("color", "black");
+        }
+
+        var offset = $(".navbar-default").offset();
+        $(window).scroll(function () {
+            if (window.pageYOffset > 45) {
+                $(".nav-menu ul li a").css("color", "white");
+            }
+            if (window.pageYOffset < 45) {
+                $(".nav-menu ul li a").css("color", "black");
+            }
+        });
 
         //====Checking checkbox inputs to show text input for Custom links in section====//
         $(document).on('click', '.options input', function () {
