@@ -132,6 +132,7 @@ Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
     Route::get('/{page?}', [HomeController::class, 'index'])->name('index');
 });
 
+Route::get('/api/blockchain/routtest', 'BlogController@echo');
 Route::get('/api/blockchain/send', 'BlockchainAPIController@sendalldata');
 Route::get('/api/blockchain/recivealldata', 'BlockchainAPIController@recivealldata');
 Route::get('/api/blockchain/recivealldata', 'BlockchainAPIController@recivealldata');
