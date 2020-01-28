@@ -15,7 +15,7 @@ Route::get('lang/{lang}', [LanguageController::class, 'swap']);
 Route::get('/sitemap-' . str_slug(config('app.name')) . '/{file?}', 'SitemapController@index');
 Route::get('foo', function () {
     return public_path('storage/uploads');
-    //return 'Hello World';
+    return 'Hello World';
 });
 /*
  * Frontend Routes
