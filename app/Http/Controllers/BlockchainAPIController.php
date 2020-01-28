@@ -4,19 +4,14 @@ namespace App\Http\Controllers;
 
 use CoinbaseCommerce\ApiClient;
 
-class BlockchainAPIController extends Controller {
+class BlockchainAPIController extends Controller
+{
 
     private $accessToken = "";
     private $refreshToken = "";
 
     public function __construct()
     {
-        $new = ApiClient();
-        $this->accessToken = "9sIUpXAW1JxHkILQ";
-        $this->refreshToken = "d2vYk1WoPmL55L2VE4YG2OfyJzC0ZY31";
-        $configuration = Configuration::oauth($this->accessToken, $this->refreshToken);
-        $client = Client::create($configuration);
-        $this->echo();
     }
 
     public function Create()
@@ -33,6 +28,32 @@ class BlockchainAPIController extends Controller {
 
     public function Lists()
     {
+        $params = [
+            'limit' => 2,
+            'order' => 'desc'
+        ];
+
+        $list = Checkout::getList($params);
+
+        foreach ($list as $checkout) {
+            var_dump($checkout);
+        }
+
+        $count = $list->count();
+
+        $count = count($list);
+
+        $countAll = $list->countAll();
+
+        $pagination = $list->getPagination();
+
+        if ($list->hasNext()) {
+            $list->loadNext();
+
+            foreach ($list as $checkout) {
+                var_dump($checkout);
+            }
+        }
     }
 
     public function Checkout()

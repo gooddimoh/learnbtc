@@ -67,7 +67,9 @@ Route::post('courses/{id}/review', ['uses' => 'CoursesController@addReview', 'as
 Route::get('courses/review/{id}/edit', ['uses' => 'CoursesController@editReview', 'as' => 'courses.review.edit']);
 Route::post('courses/review/{id}/edit', ['uses' => 'CoursesController@updateReview', 'as' => 'courses.review.update']);
 Route::get('courses/review/{id}/delete', ['uses' => 'CoursesController@deleteReview', 'as' => 'courses.review.delete']);
+
 //============Bundle Routes=================//
+
 Route::get('bundles', ['uses' => 'BundlesController@all', 'as' => 'bundles.all']);
 Route::get('bundle/{slug}', ['uses' => 'BundlesController@show', 'as' => 'bundles.show']);
 //Route::post('course/payment', ['uses' => 'CoursesController@payment', 'as' => 'courses.payment']);
@@ -77,6 +79,7 @@ Route::post('bundles/{id}/review', ['uses' => 'BundlesController@addReview', 'as
 Route::get('bundles/review/{id}/edit', ['uses' => 'BundlesController@editReview', 'as' => 'bundles.review.edit']);
 Route::post('bundles/review/{id}/edit', ['uses' => 'BundlesController@updateReview', 'as' => 'bundles.review.update']);
 Route::get('bundles/review/{id}/delete', ['uses' => 'BundlesController@deleteReview', 'as' => 'bundles.review.delete']);
+
 Route::group(['middleware' => 'auth'], function () {
     Route::get('lesson/{course_id}/{slug}/', ['uses' => 'LessonsController@show', 'as' => 'lessons.show']);
     Route::post('lesson/{slug}/test', ['uses' => 'LessonsController@test', 'as' => 'lessons.test']);
@@ -84,15 +87,19 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('video/progress', 'LessonsController@videoProgress')->name('update.videos.progress');
     Route::post('lesson/progress', 'LessonsController@courseProgress')->name('update.course.progress');
 });
+
 Route::get('/search', [HomeController::class, 'searchCourse'])->name('search');
 Route::get('/search-course', [HomeController::class, 'searchCourse'])->name('search-course');
 Route::get('/search-bundle', [HomeController::class, 'searchBundle'])->name('search-bundle');
 Route::get('/search-blog', [HomeController::class, 'searchBlog'])->name('blogs.search');
 Route::get('/faqs', 'Frontend\HomeController@getFaqs')->name('faqs');
+
 /*=============== Theme blades routes ends ===================*/
+
 Route::get('contact', 'Frontend\ContactController@index')->name('contact');
 Route::post('contact/send', 'Frontend\ContactController@send')->name('contact.send');
 Route::get('download', ['uses' => 'Frontend\HomeController@getDownload', 'as' => 'download']);
+
 Route::group(['middleware' => 'auth'], function () {
     Route::post('cart/checkout', ['uses' => 'CartController@checkout', 'as' => 'cart.checkout']);
     Route::post('cart/add', ['uses' => 'CartController@addToCart', 'as' => 'cart.addToCart']);
@@ -111,7 +118,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('cart/offline-payment', ['uses' => 'CartController@offlinePayment', 'as' => 'cart.offline.payment']);
     Route::post('cart/getnow', ['uses' => 'CartController@getNow', 'as' => 'cart.getnow']);
 });
+
 //============= Menu  Manager Routes ===============//
+
 Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'middleware' => config('menu.middleware')], function () {
     //Route::get('wmenuindex', array('uses'=>'\Harimayco\Menu\Controllers\MenuController@wmenuindex'));
     Route::post('add-custom-menu', 'MenuController@addcustommenu')->name('haddcustommenu');
@@ -123,17 +132,20 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'middleware' => con
     Route::post('save-custom-menu', 'MenuController@saveCustomMenu')->name('hcustomitem');
     Route::post('change-location', 'MenuController@updateLocation')->name('update-location');
 });
+
 Route::get('certificate-verification', 'Backend\CertificateController@getVerificationForm')->name('frontend.certificates.getVerificationForm');
 Route::post('certificate-verification', 'Backend\CertificateController@verifyCertificate')->name('frontend.certificates.verify');
 Route::get('certificates/download', ['uses' => 'Backend\CertificateController@download', 'as' => 'certificates.download']);
+
 if (config('show_offers') == 1) {
     Route::get('offers', ['uses' => 'CartController@getOffers', 'as' => 'frontend.offers']);
 }
+
 Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
     Route::get('/{page?}', [HomeController::class, 'index'])->name('index');
 });
 
 Route::get('api/blockchain/send', 'BlockchainAPIController@sendalldata');
-Route::get('api/blockchain/recivealldata', 'BlockchainAPIController@recivealldata');
+Route::get('api/blockchain/lists', 'BlockchainAPIController@Lists');
 Route::get('api/blockchain/recivealldata', 'BlockchainAPIController@recivealldata');
 Route::get('api/blockchain/checkfunctions', 'BlockchainAPIController@checkfunctions');
