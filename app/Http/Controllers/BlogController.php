@@ -105,4 +105,7 @@ class BlogController extends Controller {
         return abort(419);
     }
 
+    public function echo(){
+        echo "echo";
+    }
 }
