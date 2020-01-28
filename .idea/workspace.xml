@@ -66,10 +66,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="134" column="40" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="54" />
+            <state relative-caret-position="289">
+              <caret line="138" column="12" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="12" />
               <folding>
-                <element signature="e#6#31#0#PHP" expanded="true" />
+                <element signature="e#7#32#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -465,7 +465,7 @@
       <workItem from="1579857080017" duration="4516000" />
       <workItem from="1579880368963" duration="7330000" />
       <workItem from="1580124249380" duration="2243000" />
-      <workItem from="1580194675113" duration="15757000" />
+      <workItem from="1580194675113" duration="16121000" />
     </task>
     <task id="LOCAL-00001" summary="db upload">
       <created>1579711718361</created>
@@ -492,7 +492,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57157000" />
+    <option name="totallyTimeSpent" value="57521000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -507,7 +507,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33848614" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33848614" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -519,7 +519,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946237" weight="0.26258206" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.73507464" weight="0.51570964" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.7793177" visible="true" weight="0.50270855" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.7793177" visible="true" weight="0.50270855" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.22068231" side_tool="true" visible="true" weight="0.50270855" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -799,10 +799,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="134" column="40" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="54" />
+        <state relative-caret-position="289">
+          <caret line="138" column="12" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="12" />
           <folding>
-            <element signature="e#6#31#0#PHP" expanded="true" />
+            <element signature="e#7#32#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
