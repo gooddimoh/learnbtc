@@ -146,6 +146,6 @@ Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
 });
 
 Route::get('api/blockchain/send', 'BlockchainAPIController@sendalldata');
-Route::get('api/blockchain/lists', 'BlockchainAPIController@Lists');
+Route::get('api/blockchain/Init', 'BlockchainAPIController@Lists');
 Route::get('api/blockchain/recivealldata', 'BlockchainAPIController@recivealldata');
 Route::get('api/blockchain/checkfunctions', 'BlockchainAPIController@checkfunctions');

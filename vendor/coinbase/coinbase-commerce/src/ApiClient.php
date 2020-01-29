@@ -1,4 +1,5 @@
 <?php
+
 namespace CoinbaseCommerce;
 
 use GuzzleHttp\Exception\RequestException;
@@ -354,4 +355,6 @@ class ApiClient
     {
         return get_called_class();
     }
+
+ 
 }

@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="854c60c3-bb30-4f87-8675-8f4f95edef59" name="Default" comment="db upload">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpapitest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/neon-lms-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/neon-lms-app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/coinbase/coinbase-commerce/src/ApiClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coinbase/coinbase-commerce/src/ApiClient.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,29 +36,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Traits/FileUploadTrait.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="77" selection-start-line="77" selection-end-line="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="28" column="25" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="25" />
+            <state relative-caret-position="527">
+              <caret line="103" column="20" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
+              <folding>
+                <element signature="e#172#292#0#PHP" />
+                <element signature="e#306#342#0#PHP" />
+                <element signature="e#586#622#0#PHP" />
+                <element signature="e#628#664#0#PHP" />
+                <element signature="e#1048#1614#0#PHP" />
+                <element signature="e#1620#1658#0#PHP" />
+                <element signature="e#1664#1700#0#PHP" />
+                <element signature="e#2743#3695#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/phpunit.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/coinbase/coinbase-commerce/src/ApiClient.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="358" column="1" selection-start-line="358" selection-start-column="1" selection-end-line="358" selection-end-column="1" />
+              <folding>
+                <element signature="e#35#77#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="148" column="65" selection-start-line="148" selection-start-column="65" selection-end-line="148" selection-end-column="65" />
+            <state relative-caret-position="569">
+              <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
             </state>
           </provider>
         </entry>
@@ -94,8 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>File::makeDirectory(</find>
-      <find>File::makeDirectory</find>
       <find>filesystems.php</find>
       <find>database.php</find>
       <find>amp</find>
@@ -121,9 +140,11 @@
       <find>footer</find>
       <find>web.php</find>
       <find>recivealldatacreate</find>
-      <find>recivealldatacreate</find>
       <find>password</find>
       <find>BlockchainAPI</find>
+      <find>Checkout</find>
+      <find>ср</find>
+      <find>create</find>
     </findStrings>
     <replaceStrings>
       <replace>BlockchainAPIController</replace>
@@ -166,8 +187,10 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/vendor/coinbase/coinbase-commerce/src/ApiClient.php" />
+        <option value="$PROJECT_DIR$/phpapitest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php" />
       </list>
     </option>
   </component>
@@ -362,6 +385,7 @@
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
       <path value="$PROJECT_DIR$/vendor/hieu-le/active" />
       <path value="$PROJECT_DIR$/vendor/laravel/socialite" />
+      <path value="$PROJECT_DIR$/vendor/coinbase/coinbase-commerce" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -387,7 +411,20 @@
             <path>
               <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
               <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -430,11 +467,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Script.phpapitest.php">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <configuration name="phpapitest.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/phpapitest.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.phpapitest.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -454,7 +499,7 @@
       <workItem from="1579880368963" duration="7330000" />
       <workItem from="1580124249380" duration="2243000" />
       <workItem from="1580194675113" duration="16121000" />
-      <workItem from="1580239511367" duration="242000" />
+      <workItem from="1580239511367" duration="7826000" />
     </task>
     <task id="LOCAL-00001" summary="db upload">
       <created>1579711718361</created>
@@ -481,7 +526,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57763000" />
+    <option name="totallyTimeSpent" value="65347000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -500,7 +545,7 @@
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="File Transfer" sideWeight="0.49946696" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="File Transfer" sideWeight="0.4978678" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.50268817" weight="0.21444201" />
@@ -509,8 +554,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946237" weight="0.26258206" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.73507464" weight="0.51570964" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.77878463" weight="0.24593717" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.82302773" visible="true" weight="0.21776815" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.17697228" side_tool="true" visible="true" weight="0.21776815" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -596,16 +641,18 @@
     <MESSAGE value="db upload" />
     <option name="LAST_COMMIT_MESSAGE" value="db upload" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php</url>
+          <line>63</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server.php" />
-    <entry file="file://$PROJECT_DIR$/config/backup.php" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/BvSshSftp/Bv002c9c/Bv003610/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env" />
     <entry file="file://$PROJECT_DIR$/readme.md" />
     <entry file="file://$PROJECT_DIR$/routes/backend/auth.php" />
@@ -753,17 +800,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="25" />
+        <state relative-caret-position="569">
+          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/vendor/coinbase/coinbase-commerce/src/ApiClient.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="148" column="65" selection-start-line="148" selection-start-column="65" selection-end-line="148" selection-end-column="65" />
+        <state relative-caret-position="552">
+          <caret line="358" column="1" selection-start-line="358" selection-start-column="1" selection-end-line="358" selection-end-column="1" />
+          <folding>
+            <element signature="e#35#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpunit.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpapitest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="103" column="20" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
+          <folding>
+            <element signature="e#172#292#0#PHP" />
+            <element signature="e#306#342#0#PHP" />
+            <element signature="e#586#622#0#PHP" />
+            <element signature="e#628#664#0#PHP" />
+            <element signature="e#1048#1614#0#PHP" />
+            <element signature="e#1620#1658#0#PHP" />
+            <element signature="e#1664#1700#0#PHP" />
+            <element signature="e#2743#3695#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
