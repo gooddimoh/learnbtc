@@ -5,8 +5,7 @@ namespace App\Repositories;
 /**
  * Interface RepositoryContract.
  */
-interface RepositoryContract
-{
+interface RepositoryContract {
     public function all(array $columns = ['*']);
 
     public function count();

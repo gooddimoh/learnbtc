@@ -2,9 +2,7 @@
 @section('title', __('labels.backend.orders.title').' | '.app_name())
 
 @section('content')
-
     <div class="card">
-
         <div class="card-header">
             <h3 class="page-title mb-0 float-left">@lang('labels.backend.orders.title')</h3>
             @if($order->invoice != "")

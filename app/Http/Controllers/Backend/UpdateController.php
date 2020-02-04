@@ -28,7 +28,7 @@ class UpdateController extends Controller
         $checkFiles = \Zipper::make(public_path() . '/updates/' . $file_name)->listFiles('/\.key/i');
         foreach ($checkFiles as $item) {
             $item = Arr::last(explode('/', $item));
-            if ($item == md5('NeonLMSUpdate') . '.key') {
+            if ($item == md5('learnwithbtcUpdate') . '.key') {
                 $is_verified = true;
             }
         }

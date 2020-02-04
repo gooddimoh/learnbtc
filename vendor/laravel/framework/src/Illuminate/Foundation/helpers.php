@@ -270,8 +270,7 @@ if (! function_exists('config')) {
      * @param  mixed  $default
      * @return mixed|\Illuminate\Config\Repository
      */
-    function config($key = null, $default = null)
-    {
+    function config($key = null, $default = null){
         if (is_null($key)) {
             return app('config');
         }

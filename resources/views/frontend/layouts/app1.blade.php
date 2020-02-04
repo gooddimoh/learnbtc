@@ -61,16 +61,20 @@
         @endif
 
         @if(config('google_analytics_id') != "")
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id={{config('google_analytics_id')}}"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id={{config('google_analytics_id')}}"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
 
-            gtag('config', '{{config('google_analytics_id')}}');
-        </script>
-            @endif
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+
+                gtag('js', new Date());
+
+                gtag('config', '{{config('google_analytics_id')}}');
+            </script>
+        @endif
 
 
     </head>
@@ -90,11 +94,9 @@
                         <div class="navbar-default">
                             <div class="navbar-header float-left">
                                 <a class="navbar-brand text-uppercase" href="{{url('/')}}">
-                                    {{--<img src="{{asset("storage/logos/".config('logo_w_image'))}}" alt="logo">--}}
-                                    <img width="40px" height="40px" src="https://www.pinclipart.com/picdir/middle/382-3823373_d2s-learning-management-system-learning-management-system-logo.png" alt="logo">
+                                    <img width="60px" height="60px" src="https://learnwithbtc.com/storage/logos/logo-white-image.png" alt="logo">
                                 </a>
                             </div><!-- /.navbar-header -->
-
                             <div class="cart-search float-right ul-li">
                                 <ul>
                                     <li>
@@ -106,8 +108,6 @@
                                     </li>
                                 </ul>
                             </div>
-
-
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <nav class="navbar-menu float-right">
                                 <div class="nav-menu ul-li">
@@ -115,7 +115,7 @@
                                         @if(count($custom_menus) > 0 )
                                             @foreach($custom_menus as $menu)
                                                 {{--@if(is_array($menu['id']) && $menu['id'] == $menu['parent'])--}}
-                                                    {{--@if($menu->subs && (count($menu->subs) > 0))--}}
+                                                {{--@if($menu->subs && (count($menu->subs) > 0))--}}
                                                 @if($menu['id'] == $menu['parent'])
                                                     @if(count($menu->subs) == 0)
                                                         <li class="">
@@ -163,7 +163,7 @@
                                                 </div>
                                             </li>
                                         @endif
-                                            @if(count($locales) > 1)
+                                        @if(count($locales) > 1)
                                             <li class="menu-item-has-children ul-li-block">
                                                 <a href="#">
                                                     <span class="d-md-down-none">@lang('menus.language-picker.language')
@@ -205,7 +205,7 @@
                                                                 @endforeach
                                                             </ul>
                                                         </li>
-                                                     @else
+                                                    @else
                                                         <li class="">
                                                             <a href="{{asset($menu->link)}}"
                                                                class="nav-link {{ active_class(Active::checkRoute('frontend.user.dashboard')) }}"
@@ -241,24 +241,24 @@
                                                 </div>
                                             </li>
                                         @endif
-                                            @if(count($locales) > 1)
-                                                <li class="menu-item-has-children ul-li-block">
-                                                    <a href="#">
+                                        @if(count($locales) > 1)
+                                            <li class="menu-item-has-children ul-li-block">
+                                                <a href="#">
                                                     <span class="d-md-down-none">@lang('menus.language-picker.language')
                                                         ({{ strtoupper(app()->getLocale()) }})</span>
-                                                    </a>
-                                                    <ul class="">
-                                                        @foreach($locales as $lang)
-                                                            @if($lang != app()->getLocale())
-                                                                <li>
-                                                                    <a href="{{ '/lang/'.$lang }}"
-                                                                       class=""> @lang('menus.language-picker.langs.'.$lang)</a>
-                                                                </li>
-                                                            @endif
-                                                        @endforeach
-                                                    </ul>
-                                                </li>
-                                            @endif
+                                                </a>
+                                                <ul class="">
+                                                    @foreach($locales as $lang)
+                                                        @if($lang != app()->getLocale())
+                                                            <li>
+                                                                <a href="{{ '/lang/'.$lang }}"
+                                                                   class=""> @lang('menus.language-picker.langs.'.$lang)</a>
+                                                            </li>
+                                                        @endif
+                                                    @endforeach
+                                                </ul>
+                                            </li>
+                                        @endif
                                     </ul>
                                 </nav>
 

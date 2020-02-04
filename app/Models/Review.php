@@ -9,8 +9,6 @@ class Review extends Model
 {
     protected  $guarded = [];
 
-
-
     public function reviewable()
     {
         return $this->morphTo();

@@ -75,7 +75,7 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-sm-12">
-                    <ul class="nav main-nav-tabs nav-tabs" >
+                    <ul class="nav main-nav-tabs nav-tabs">
                         <li class="nav-item"><a data-toggle="tab" class="nav-link active " href="#general">
                                 {{__('labels.backend.general_settings.title')}}
                             </a>
@@ -129,17 +129,15 @@
                         <div class="col ">
                             <div class="form-group row">
                                 {{ html()->label(__('labels.backend.general_settings.app_name'))->class('col-md-2 form-control-label')->for('app_name') }}
-
                                 <div class="col-md-10">
                                     {{ html()->text('app__name')
                                         ->class('form-control')
                                         ->placeholder(__('labels.backend.general_settings.app_name'))
                                         ->attribute('maxlength', 191)
-                                        
+
                                         ->value(config('app.name'))
                                         ->autofocus()
                                         }}
-
                                 </div><!--col-->
                             </div><!--form-group-->
 
@@ -397,7 +395,8 @@
                             </div><!--form-group-->
                         </div>
                         <div class="col-12 text-left">
-                            <a href="{{route('admin.troubleshoot')}}" class="btn btn-lg btn-warning">{{__('labels.backend.general_settings.troubleshoot')}}</a>
+                            <a href="{{route('admin.troubleshoot')}}"
+                               class="btn btn-lg btn-warning">{{__('labels.backend.general_settings.troubleshoot')}}</a>
                         </div>
                     </div>
                 </div>
@@ -657,8 +656,6 @@
                             </div><!--form-group-->
                             <hr>
                             <p class="help-text mb-0">{!!   __('labels.backend.general_settings.email.note') !!}</p>
-
-
                         </div>
                     </div>
                 </div>
@@ -667,6 +664,7 @@
                 <div id="payment_settings" class="tab-pane container fade">
                     <div class="row mt-4 mb-4">
                         <div class="col">
+
                             <div class="form-group row">
                                 {{ html()->label(__('labels.backend.general_settings.payment_settings.select_currency'))->class('col-md-3 form-control-label')}}
                                 <div class="col-md-9">
@@ -680,6 +678,7 @@
                                     </select>
                                 </div>
                             </div>
+
                             <div class="form-group row">
                                 {{ html()->label(__('labels.backend.general_settings.payment_settings.stripe'))->class('col-md-3 form-control-label')->for('services.stripe.active') }}
                                 <div class="col-md-9">
@@ -698,6 +697,7 @@
                                     <small>
                                         <i> {{ __('labels.backend.general_settings.payment_settings.stripe_note')}}</i>
                                     </small>
+
                                     <div class="switch-content @if(config('services.stripe.active') == 0 || config('services.stripe.active') == false) d-none @endif">
                                         <br>
                                         <div class="form-group row">
@@ -719,8 +719,10 @@
                                             </div><!--col-->
                                         </div><!--form-group-->
                                     </div>
+
                                 </div><!--col-->
-                            </div><!--form-group-->
+                            </div>
+
                             <div class="form-group row">
                                 {{ html()->label(__('labels.backend.general_settings.payment_settings.paypal'))->class('col-md-3 form-control-label')}}
                                 <div class="col-md-9">
@@ -771,8 +773,25 @@
                                             </div><!--col-->
                                         </div><!--form-group-->
                                     </div>
-                                </div><!--col-->
-                            </div><!--form-group-->
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                {{ html()->label(__('labels.backend.general_settings.payment_settings.coinbase'))->class('col-md-3 form-control-label')}}
+                                <div class="col-md-9">
+                                    <div class="checkbox">
+                                        {{ html()->label(html()->checkbox('coinbase__active', config('coinbase.active') ? true : false,1)->class('switch-input')->value(10). '<span class="switch-label"></span><span class="switch-handle"></span>')->class('switch switch-sm switch-3d switch-primary')}}
+                                        <a target="_blank" href="https://commerce.coinbase.com/docs/api/#checkouts" class="float-right font-italic font-weight-bold">{{ __('labels.backend.general_settings.payment_settings.how_to_coinbase')}}</a>
+                                    </div>
+                                    <small>
+                                        <i> {{ __('labels.backend.general_settings.payment_settings.coinbase_note')}}</i>
+                                    </small>
+                                    <div class="switch-content @if(config('coinbase.active') == 0 || config('coinbase.active') == false) d-none @endif">
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="form-group row">
                                 {{ html()->label(__('labels.backend.general_settings.payment_settings.offline_mode'))->class('col-md-3 form-control-label')}}
                                 <div class="col-md-9">
@@ -790,9 +809,11 @@
                                     </small>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
+                <!---Payment Configuration Tab--->
 
                 <!--Language Tab--->
                 <div id="language_settings" class="tab-pane container fade">
@@ -916,20 +937,25 @@
                             <h4>{{__('labels.backend.general_settings.api_clients.title')}}</h4>
                         </div>
                         <div class="col-lg-4 col-12">
-                                <fieldset>
-                                    <div class="input-group">
-                                        <input type="text"  id="api_client_name" class="form-control" placeholder="{{__('labels.backend.general_settings.api_clients.api_client_name')}}" >
-                                        <div class="input-group-append" id="button-addon2">
-                                            <button class="btn btn-primary generate-client" type="button">{{__('labels.backend.general_settings.api_clients.generate')}}</button>
-                                        </div>
+                            <fieldset>
+                                <div class="input-group">
+                                    <input type="text" id="api_client_name" class="form-control"
+                                           placeholder="{{__('labels.backend.general_settings.api_clients.api_client_name')}}">
+                                    <div class="input-group-append" id="button-addon2">
+                                        <button class="btn btn-primary generate-client"
+                                                type="button">{{__('labels.backend.general_settings.api_clients.generate')}}</button>
                                     </div>
-                                    <span class="text-danger" id="api_client_name_error"></span>
-                                </fieldset>
+                                </div>
+                                <span class="text-danger" id="api_client_name_error"></span>
+                            </fieldset>
                         </div>
                         <div class="col-12 mt-2">
                             <p>{!! __('labels.backend.general_settings.api_clients.note') !!}</p>
 
-                            <a target="_blank" href="https://documenter.getpostman.com/view/5183624/SW18uZwk?version=latest" class="btn btn-dark  font-weight-bold text-white">{{__('labels.backend.general_settings.api_clients.developer_manual')}} <i class="fa fa-arrow-right ml-2"></i></a>
+                            <a target="_blank"
+                               href="https://documenter.getpostman.com/view/5183624/SW18uZwk?version=latest"
+                               class="btn btn-dark  font-weight-bold text-white">{{__('labels.backend.general_settings.api_clients.developer_manual')}}
+                                <i class="fa fa-arrow-right ml-2"></i></a>
                         </div>
                     </div>
                     <div class="row mt-4 mb-4">
@@ -956,9 +982,13 @@
                                             <td>{{$client->revoked?__('labels.backend.general_settings.api_clients.revoked'):__('labels.backend.general_settings.api_clients.live')}}</td>
                                             <td>
                                                 @if(!$client->revoked)
-                                                    <a data-id="{{$client->id}}"  class="btn btn-sm revoke-api-client btn-danger"  href="#">{{__('labels.backend.general_settings.api_clients.revoke')}}</a>
+                                                    <a data-id="{{$client->id}}"
+                                                       class="btn btn-sm revoke-api-client btn-danger"
+                                                       href="#">{{__('labels.backend.general_settings.api_clients.revoke')}}</a>
                                                 @else
-                                                    <a data-id="{{$client->id}}" class="btn btn-sm btn-success revoke-api-client" href="#">{{__('labels.backend.general_settings.api_clients.enable')}}</a>
+                                                    <a data-id="{{$client->id}}"
+                                                       class="btn btn-sm btn-success revoke-api-client"
+                                                       href="#">{{__('labels.backend.general_settings.api_clients.enable')}}</a>
                                                 @endif
 
                                             </td>
@@ -994,8 +1024,7 @@
     <script src="{{asset('plugins/bootstrap-iconpicker/js/bootstrap-iconpicker.bundle.min.js')}}"></script>
     <script>
         $(document).ready(function () {
-
-            @if(request()->has('tab'))
+                    @if(request()->has('tab'))
             var tab = "{{request('tab')}}";
             $('.nav-tabs a[href="#' + tab + '"]').tab('show');
             @endif
@@ -1062,6 +1091,13 @@
             @if(config('paypal.settings.mode') != "")
             $('#paypal_settings_mode').find('option').removeAttr('selected')
             $('#paypal_settings_mode').find('option[value="{{config('paypal.settings.mode')}}"]').attr('selected', 'selected');
+            @endif
+
+
+            //======== Preset PaymentMode for Coinbase =======>
+            @if(config('coinbase.settings.mode') != "")
+            $('#coinbase_settings_mode').find('option').removeAttr('selected')
+            $('#coinbase_settings_mode').find('option[value="{{config('paypal.settings.mode')}}"]').attr('selected', 'selected');
             @endif
 
 
@@ -1136,14 +1172,14 @@
 
 
             //========== Registration fields status =========//
-            @if(config('registration_fields') != NULL)
+                    @if(config('registration_fields') != NULL)
             var fields = "{{config('registration_fields')}}";
 
             fields = JSON.parse(fields.replace(/&quot;/g, '"'));
 
-            $(fields).each(function (key,element) {
-                appendElement(element.type,element.name);
-                $('.input-list').find('[data-name="'+element.name+'"]').attr('checked',true)
+            $(fields).each(function (key, element) {
+                appendElement(element.type, element.name);
+                $('.input-list').find('[data-name="' + element.name + '"]').attr('checked', true)
 
             });
 
@@ -1196,7 +1232,7 @@
                 }
             });
 
-              @if(request()->has('tab'))
+                    @if(request()->has('tab'))
             var tab = "{{request('tab')}}";
             $('.nav-tabs a[href="#' + tab + '"]').tab('show');
             @endif
@@ -1216,13 +1252,11 @@
             }
         })
 
-
         //On Default language change update Display type RTL/LTR
         $(document).on('change', '#app_locale', function () {
             var display_type = $(this).find(":selected").data('display-type');
             $('#app_display_type').val(display_type)
         });
-
 
         //On click add input list
         $(document).on('click', '.input-list input[type="checkbox"]', function () {
@@ -1242,9 +1276,8 @@
             }
         });
 
-
         //Revoke App Client Secret
-        $(document).on('click','.revoke-api-client',function () {
+        $(document).on('click', '.revoke-api-client', function () {
             var api_id = $(this).data('id');
             $.ajax({
                 url: '{{ route('admin.api-client.status') }}',
@@ -1252,10 +1285,10 @@
                 dataType: 'JSON',
                 data: {'api_id': api_id, _token: '{{csrf_token()}}'},
                 success: function (response) {
-                    if(response.status == 'success'){
+                    if (response.status == 'success') {
                         window.location.href = '{{route('admin.general-settings',['tab'=>'api_client_settings'])}}'
 
-                    }else{
+                    } else {
                         alert("{{__('labels.backend.general_settings.api_clients.something_went_wrong')}}");
                     }
 
@@ -1263,26 +1296,26 @@
             })
         });
 
-        $(document).on('click','.generate-client',function () {
+        $(document).on('click', '.generate-client', function () {
             var api_client_name = $('#api_client_name').val();
 
-            if($.trim(api_client_name).length > 0) { // zero-length string AFTER a trim
+            if ($.trim(api_client_name).length > 0) { // zero-length string AFTER a trim
                 $.ajax({
                     url: '{{  route('admin.api-client.generate') }}',
                     type: 'POST',
                     dataType: 'JSON',
                     data: {'api_client_name': api_client_name, _token: '{{csrf_token()}}'},
                     success: function (response) {
-                        if(response.status == 'success'){
+                        if (response.status == 'success') {
                             window.location.href = '{{route('admin.general-settings',['tab'=>'api_client_settings'])}}'
 
-                        }else{
+                        } else {
                             alert("{{__('labels.backend.general_settings.api_clients.something_went_wrong')}}");
                         }
 
                     }
                 })
-            }else{
+            } else {
                 $('#api_client_name_error').text("{{__('labels.backend.general_settings.api_clients.please_input_api_client_name')}}");
             }
 
@@ -1310,7 +1343,6 @@
             }
             $('.input-boxes').append(html)
         }
-
 
     </script>
 @endpush

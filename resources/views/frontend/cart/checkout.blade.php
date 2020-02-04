@@ -50,12 +50,8 @@
             </div>
         </div>
     </section>
-    <!-- End of breadcrumb section
-        ============================================= -->
-
-
-    <!-- Start of Checkout content
-        ============================================= -->
+    <!-- End of breadcrumb section ============================================= -->
+    <!-- Start of Checkout content ============================================= -->
     <section id="checkout" class="checkout-section">
         <div class="container">
             <div class="section-title mb45 headline text-center">
@@ -69,10 +65,8 @@
                             <div class="section-title-2  headline text-left">
                                 <h2>@lang('labels.frontend.cart.order_item')</h2>
                             </div>
-
                             <div class="course-list-view table-responsive">
                                 <table class="table">
-
                                     <thead>
                                     <tr class="list-head text-uppercase">
                                         <th>@lang('labels.frontend.cart.product_name')</th>
@@ -165,7 +159,6 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                         <div class="col-md-6">
                                                             <div class="payment-img float-right">
                                                                 <img src="{{asset('assets/img/banner/p-1.jpg')}}"
@@ -174,11 +167,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
-                                                <div class="check-out-form collapse show" id="collapsePaymentOne"
-                                                     data-parent="#accordion">
-
-
+                                                <div class="check-out-form collapse show" id="collapsePaymentOne" data-parent="#accordion">
                                                     <form accept-charset="UTF-8"
                                                           action="{{route('cart.stripe.payment')}}"
                                                           class="require-validation" data-cc-on-file="false"
@@ -244,7 +233,6 @@
                                                 </div>
                                             </div>
                                         @endif
-
                                         @if(config('paypal.active') == 1)
                                             <div class="payment-method w-100 mb-0">
                                                 <div class="payment-method-header">
@@ -288,7 +276,49 @@
                                                 </div>
                                             </div>
                                         @endif
+                                        @if(config('coinbase.active') == 1)
+                                            <div class="payment-method w-100 mb-0">
+                                                <div class="payment-method-header">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="method-header-text">
+                                                                <div class="radio">
+                                                                    <label>
+                                                                        <input data-toggle="collapse"
+                                                                               href="#collapsePaymentTwo"
+                                                                               type="radio" name="paymentMethod"
+                                                                               value="2">
+                                                                        @lang('labels.frontend.cart.paypal')
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
 
+                                                        <div class="col-md-6">
+                                                            <div class="payment-img float-right">
+                                                                <img src="{{asset('assets/img/banner/p-2.jpg')}}"
+                                                                     alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="check-out-form collapse disabled" id="collapsePaymentTwo"
+                                                     data-parent="#accordion">
+                                                    <form class="w3-container w3-display-middle w3-card-4 "
+                                                          method="POST"
+                                                          id="payment-form" action="{{route('cart.paypal.payment')}}">
+                                                        {{ csrf_field() }}
+                                                        <p> @lang('labels.frontend.cart.pay_securely_paypal')</p>
+
+                                                        <button type="submit"
+                                                                class="text-white genius-btn mt25 gradient-bg text-center text-uppercase  bold-font">
+                                                            @lang('labels.frontend.cart.pay_now') <i
+                                                                    class="fas fa-caret-right"></i>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        @endif
                                         @if(config('payment_offline_active') == 1)
                                             <div class="payment-method w-100 mb-0">
                                                 <div class="payment-method-header">

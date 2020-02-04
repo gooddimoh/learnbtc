@@ -22,14 +22,12 @@ use Illuminate\Support\Facades\File;
  * @property string $start_date
  * @property tinyInteger $published
  */
-class Course extends Model
-{
+class Course extends Model {
     use SoftDeletes;
 
     protected $fillable = ['category_id', 'title', 'slug', 'description', 'price', 'course_image','course_video', 'start_date', 'published', 'free','featured', 'trending', 'popular', 'meta_title', 'meta_description', 'meta_keywords'];
 
     protected $appends = ['image'];
-
 
     protected static function boot()
     {
@@ -52,10 +50,7 @@ class Course extends Model
                 }
             }
         });
-
-
     }
-
 
     public function getImageAttribute()
     {
@@ -73,11 +68,11 @@ class Course extends Model
         return $this->attributes['price'];
     }
 
-
     /**
      * Set attribute to money format
      * @param $input
      */
+
     public function setPriceAttribute($input)
     {
         $this->attributes['price'] = $input ? $input : null;
@@ -230,7 +225,5 @@ class Course extends Model
             ->whereIn('type', $types);
 
     }
-
-
 
 }

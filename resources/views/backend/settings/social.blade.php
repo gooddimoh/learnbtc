@@ -21,8 +21,7 @@
                         {{ html()->label(__('validation.attributes.backend.settings.social_settings.facebook.label'))->class('col-md-2 form-control-label')->for('services.facebook.active') }}
                         <div class="col-md-10">
                             <div class="checkbox">
-                                {{ html()->label(
-                                        html()->checkbox('services__facebook__active', config('services.facebook.active') ? true : false,1)
+                                {{ html()->label( html()->checkbox('services__facebook__active', config('services.facebook.active') ? true : false,1)
                                               ->class('switch-input')->value(1)
                                         . '<span class="switch-label"></span><span class="switch-handle"></span>')
 

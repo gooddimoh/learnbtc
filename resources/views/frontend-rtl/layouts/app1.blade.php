@@ -97,7 +97,7 @@
                             <div class="navbar-header float-left">
                                 <a class="navbar-brand text-uppercase" href="{{url('/')}}">
                                     {{--<img src="{{asset("storage/logos/".config('logo_w_image'))}}" alt="logo">--}}
-                                    <img  width="40px" height="40px" src="https://www.pinclipart.com/picdir/middle/382-3823373_d2s-learning-management-system-learning-management-system-logo.png" alt="logo">
+                                    {{asset("storage/logos/".config('logo-black-text-whitebg'))}}
                                 </a>
                             </div><!-- /.navbar-header -->
                             <div class="cart-search float-right ul-li">

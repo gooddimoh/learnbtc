@@ -23,7 +23,6 @@ class UpdateTestsRequest extends FormRequest
     public function rules()
     {
         return [
-            
             'questions.*' => 'exists:questions,id',
         ];
     }

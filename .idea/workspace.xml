@@ -2,13 +2,180 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="854c60c3-bb30-4f87-8675-8f4f95edef59" name="Default" comment="db upload">
-      <change afterPath="$PROJECT_DIR$/phpapitest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/neon-lms-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/neon-lms-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LandingPageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/coinbase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/frontend-rtl/costume.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helpers/General/Timezone.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/General/Timezone.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/Admin/ConfigController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/Admin/ConfigController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/BackupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/BackupController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/UpdateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/UpdateController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CoinbaseAPIController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CoursesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CoursesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Admin/UpdateTeachersRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/UpdateTeachersRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Admin/UpdateTestsRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/UpdateTestsRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Admin/UpdateUsersRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/UpdateUsersRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Traits/FileUploadTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Traits/FileUploadTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Course.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/CourseTimeline.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/CourseTimeline.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Review.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Review.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/RepositoryContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/RepositoryContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blockchainlib/api-v1-client-php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/ConfigSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ConfigSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error_log" beforeDir="false" afterPath="$PROJECT_DIR$/error_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/frontend.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/frontend.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/labels.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/labels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/frontend-rtl/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/frontend-rtl/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/includes/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/includes/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/includes/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/orders/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/orders/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/orders/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/orders/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/settings/general.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/settings/general.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/settings/social.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/settings/social.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend-rtl/cart/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend-rtl/cart/checkout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend-rtl/layouts/app1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend-rtl/layouts/app1.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend-rtl/layouts/app2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend-rtl/layouts/app2.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend-rtl/layouts/app3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend-rtl/layouts/app3.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend-rtl/layouts/app4.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend-rtl/layouts/app4.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend-rtl/layouts/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend-rtl/layouts/partials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/cart/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/cart/checkout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/cart/partials/order-stats.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/cart/partials/order-stats.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/app1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/app1.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/app2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/app2.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/app3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/app3.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/app4.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/app4.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layouts/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layouts/partials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/invoices/default.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/invoices/default.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/log-viewer/_template/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/log-viewer/_template/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/coinbase/coinbase-commerce/src/ApiClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/coinbase/coinbase-commerce/src/ApiClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/logos/logo-black-text.png" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/public/logos/logo-black-text.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/logos/logo-white-image.png" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/public/logos/logo-white-image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/logos/logo-white-text.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/logos/popup-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/03708d9e96cebb5b4f685eb40d5bb92da83d518f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/04d8a17d356343bcdb527b548cbff097f5f89fbb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/0579a225e0571b70f7e32f29ae095bc429c507dc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/09723e08f2358160f6319b041941e82fd068c5d5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/0db998ac59ec1366a8baf911e28083c19cdee894.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/116d225a33dfd7a89eb334128559eceead4c35d7.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/13117ed262361730fce5fc6295dc0b63f0a5a3f9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/13a72a8075f004464159401f8a585f651b926562.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/13c0cc3596ea0271770e7f78c74243eeb9093753.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/15df5d07e313a0afeeddf00fa7d83a6c6e2165a3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/1735c73ca30f14dd539e4379f267158f0bfbe6ac.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/1797d0f3b2654f028c36a6056ea5c6c605e10e77.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/218dce698aa59bd4cbc84af2d2bba553d324a642.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/26c2933ebdd732ac28a9178f82d0c16dff5c340f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/2adeacbb2fa4bb3faa3b0e94d1b83e3edb2a7a9d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/2b020be0825a3d6eb513149330bcf387018ec77e.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/2d3879c475ed0d09a840f026d6585f6ade001437.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/2e5347408a413bd1affb8b629692df7eb07033dd.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/306126be822c355f0436bd686b3bf184af718a39.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/339d834ac9cdc2765a1c034843d0d1279a856a54.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/35d3999bd1b9245e8bd3627659e2ada20f9c7a47.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/37dd9d69ccd12332772e72392bc81830423c2b94.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/391d8dd74ac5cc84f117e022ae2b1170eaf92909.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/3d4cf1ee604341f4d4dfbd07fde87a79b29b8fe5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/409ed22a0949020d2f03e3ce84524efb21b2885f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/4520f828708fd336038720380bd310597bb8b6bd.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/46620cbf5f00d4ba7fe4b0e4499cf5e8964173a5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/46bee4216cde71e1d9fe709fbeec6c05ec24fdbe.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/4b4c722f85ce0baf00c65a6b951818287634e8f1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/4c4869f22a7e6c52775bc2c1bf2bca074d7cec3a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/4d591081726d11119702bc3ec793aa5a23d06a12.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/4ffa26036b03c785902c9993ecbca0f88c36c91d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/52a193a900044dcd45058998d9e98b8695599c3d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/5773f509de5d38517a69fcb725622f5162505475.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/59a6ba137b1c224369339b69a3ef7173d7f37b78.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/59b471cc09c8ca8e030bbccda55b8b70e46985d9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/59d81fba3c564f152b8c5f68a081f08d469edf9d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/59e1ec64023fc5c17bdf1d7b4ffcae3088a2d228.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/5a3dbef7f9ff62445b9c67c126bfc249b26c469e.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/5aaff19cc2a13911e0bd2cfd7d70a42d2a95fa16.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/5cee26c30359e032b0916e0d82a106b2c4cfb028.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/5e5c41b408fa8ab7ccd9d3729d86426541176351.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/5f6bac5cd3221726944939c0c4cc9693f598fa1a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/645574980f8ae120f219a70da42ba34675020390.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/6babb40486dc1d03dfa2e88c51c4a8470c09f2e6.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/6eab68136d3188cee46942379af855a06c41478d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/7120a0101ed5319754368a9fa142b39cea42c3b5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/72e7bf04adf647fb0c2bd26f5818c5fe73a34d6b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/77500a96b3a3fc19b354a48efb7bbd20c306f42e.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/77c6e42a74cfa9fd599d768b08215daa64961db6.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/7a72ab26490efbc301bd5a49123708f3aaed47d9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/7a943cbe324fc591e6db97c027b95cab80f5e831.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/809c2ed6e41b8f3d6b382d82b6cf077318e17dbc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/84f4813b58d31840ba240cd2d5be17a476095a6a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/85804d5b1a03999c6118fb740f09c4b4d66cc1a9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/911e9cb17cbc29dbcd9f01b8d31adac6881bd9b4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/921a71b5f9d1e8d650d6259bec4a53b44d2af132.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/92617a4ba6df6a94933b8d0c0cbf4fd25129581c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/936bd73280d58ec38ce57c1b3ad3b2d20c75ac4e.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/9705b131820e71c10d53aa22d89074d4153dd8e0.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/9aa155e5e13ddbba228df8986d6d2be32dfd130c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/9def26e90258bbb465bc83bb11291f5f623bb069.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/9e88b91b349b234ea4304719e5482bf98fe0669b.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a083491260c90ce89eac5c532dc72d9e616cec8a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a2342a211d8d88a0a6b6be6bd4fa3f0fbc7f334f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a336072a2825eacb99cf3aa07afb0dd49f8ae28d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a352b64d0fa9e9913d5d23eadc67abe155d46527.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a73692c6c580af9efbf3d963fbfc44c95a90bd42.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a86e2b2574a84f5bf4029730bb8bc4f4b6c657bb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a9700592158ae628e4b81cc677e06286344ab856.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/a9d236ca82aa9ee5cd5e834d4762fb59bc7be871.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/aa05c5c1c5828ee1f12005670bbdb80e1407dac9.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/aaccdb2e17b565d6d4a1636539367ec451815c2d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/acf022136f1048c40b9cc00fa0c6983564d55350.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/b11a14a36d58a4b3beea95c4fb710d9dfacf26a3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/b54ceaafdcbba886826ab7023ff23081eff4ea3d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/b7630515e8e021ee5a3ba5ce51f0c31fff3b97e3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/b8efb7e49d27d42c7b7998d7d86f42605fba14b3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/b905cdd79f8bb9979b439bdbb97f2a2aa7c6ecce.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/c0dc7575d67b35fee76bc0ac6eba779d50e2db07.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/c45d8e109e7406ff481c66b7a1e94e75a91dd05c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/c546749d6336c5ec74dbb4792bf20d4847145e93.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/c9bd2dfc09bea676ebc19772ed84aef117d2e17e.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/cd14d0f4716eee5aa093eadcafda9d22bc6b0413.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d1c09f79c9d8a05a560fa0650ff7b92c0ac7aa57.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d2785da7fb005a4a217a67048fe3f12ec5c7f739.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d48339a2319bd59e23ba60436ddf62972fcfc00d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d522c573e7fbed5ad9c77393f463b4ec6ba6b997.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d5e2428e8374dc63df49273c509f148a1df941ea.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d81ce5dc9ba9ec799ce1213a78559a27ef79090d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/d8680e91cef62253bf862e6cf1247336c7bb6318.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/dddd1ad8fb367246b5139aeedcc7e3887e909ad8.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/e32b44d73369cb369530fdcb21c1d2e71930d658.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/e62970e56aaf6644516adfd82746f4d3f2bc9ab0.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/e6afe107cfc567d575d871a47e0901658de8f9d6.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/e8c5d48a69a42e99dbf3987eeefa4748d5949a41.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/e8e9e7be92ac6bda11de450dae22648fd642f834.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/e93edd5ad646ac17cc66db6e5f099c60288e0df8.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/ed0ff8dcda082dc5d24073082969f2d1239a6e1d.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/ef0735dce4c9f5083eab6acb0d75aab78bcff5a3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/f2e55aecc418fd347975b089e55c629b85566515.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/f37154b980520de0c02544251b7b4146afbc87c7.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/f57ca762a091059228bef8337e1beafffc31a5b4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/f7f6adbc024e834abdf6693044a40504f3d50d4c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/fc50b00b010aa1e34a407ed44d22eccf96f556b5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/fd1bb50b9d2031a10c27c9d1fea9111d67bce35a.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/fd74d5ba2ea5d24520c35058e940935249ef65fa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/fdb24de6fdd8ca14c3f260caa7621346cbc83342.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logos/logo-black-text.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logos/logo-white-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logos/logo-white-text.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logos/popup-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,122 +203,122 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="103" column="20" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
-              <folding>
-                <element signature="e#172#292#0#PHP" />
-                <element signature="e#306#342#0#PHP" />
-                <element signature="e#586#622#0#PHP" />
-                <element signature="e#628#664#0#PHP" />
-                <element signature="e#1048#1614#0#PHP" />
-                <element signature="e#1620#1658#0#PHP" />
-                <element signature="e#1664#1700#0#PHP" />
-                <element signature="e#2743#3695#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phpunit.xml">
+        <entry file="file://$PROJECT_DIR$/resources/lang/ru/http.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/coinbase/coinbase-commerce/src/ApiClient.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="358" column="1" selection-start-line="358" selection-start-column="1" selection-end-line="358" selection-end-column="1" />
-              <folding>
-                <element signature="e#35#77#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/resources/lang/ru/labels.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/resources/lang/ru/menus.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/lang/ru/navs.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/lang/ru/pagination.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/lang/ru/passwords.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/lang/ru/roles.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/lang/ru/strings.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/lang/ru/validation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4002" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-              <folding>
-                <element signature="e#40#85#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/Auth/ChangePasswordController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>filesystems.php</find>
-      <find>database.php</find>
-      <find>amp</find>
-      <find>login</find>
-      <find>zach</find>
-      <find>composer</find>
-      <find>Longman</find>
-      <find>Offline Payment</find>
-      <find>offline_mode</find>
-      <find>offline_payment</find>
-      <find>coinbase</find>
-      <find>payment</find>
+      <find>https://www.neonlms.com/</find>
+      <find>neonlms</find>
+      <find>lms</find>
+      <find>learnwithbtc</find>
+      <find>neon</find>
+      <find>neon-lms-app</find>
+      <find>-app</find>
+      <find>X-CC-Api-Key</find>
+      <find>apiKey</find>
+      <find>$this-&gt;apiKey</find>
+      <find>app-header</find>
+      <find>find . -name &quot;*.bak&quot;</find>
+      <find>init</find>
+      <find>config</find>
+      <find>route</find>
+      <find>$apiKey</find>
+      <find>apiKey</find>
+      <find>CoinbaseAPIController</find>
+      <find>coinbase0</find>
+      <find>No payment method available at this moment</find>
+      <find>no_payment_method</find>
       <find>paypal</find>
-      <find>payment_settings</find>
-      <find>interface</find>
-      <find>Payment Method</find>
-      <find>Offline</find>
-      <find>Bitcoin</find>
-      <find>payment_type</find>
-      <find>stripe</find>
-      <find>makeOrder</find>
-      <find>header</find>
-      <find>footer</find>
-      <find>web.php</find>
-      <find>recivealldatacreate</find>
-      <find>password</find>
-      <find>BlockchainAPI</find>
-      <find>Checkout</find>
-      <find>ср</find>
-      <find>create</find>
+      <find>coinbase</find>
+      <find>Coinbase</find>
+      <find>Coinbase Payment Method</find>
+      <find>order-payment</find>
+      <find>error</find>
+      <find>view</find>
+      <find>landing1</find>
+      <find>landing2</find>
     </findStrings>
     <replaceStrings>
       <replace>BlockchainAPIController</replace>
+      <replace>blockchain.info</replace>
+      <replace>Coinbase</replace>
+      <replace>coinbase</replace>
+      <replace>{{asset('storage/logos/'.config('black-logo-no-background')}}</replace>
+      <replace>https://learnwithbtc.com/storage/logos/logo-white-image.png</replace>
+      <replace>'</replace>
+      <replace>https://learnwithbtc.com/</replace>
+      <replace>learnwithbtc</replace>
+      <replace>60px</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\OSPanelNew\OSPanel\domains\localhost\learnbtc.com\learnbtc</dir>
       <dir>D:\OSPanelNew\OSPanel\domains\localhost\learnbtc.com\learnbtc\learnbtc</dir>
+      <dir>D:\OSPanelNew\OSPanel\domains\localhost\learnbtc\app</dir>
+      <dir>D:\OSPanelNew\OSPanel\domains\localhost\learnbtc\resources\sass\backend</dir>
+      <dir>D:\OSPanelNew\OSPanel\domains\localhost\learnbtc\app\Models</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -160,44 +327,64 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/vendor/unisharp/laravel-filemanager/src/Traits/LfmHelpers.php" />
-        <option value="$PROJECT_DIR$/config/medialibrary.php" />
-        <option value="$PROJECT_DIR$/main.sql" />
-        <option value="$PROJECT_DIR$/uploaddumpmysql.php" />
-        <option value="$PROJECT_DIR$/uploaddumpmysql.sql" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/BvSshSftp/Bv002c9c/Bv003610/index.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/Composer Log/Composer Log.composerLog" />
-        <option value="$PROJECT_DIR$/routes/breadcrumbs/backend/auth.php" />
-        <option value="$PROJECT_DIR$/routes/console.php" />
-        <option value="$PROJECT_DIR$/.phpstorm.meta.php" />
-        <option value="$PROJECT_DIR$/resources/lang/en/labels.php" />
-        <option value="$PROJECT_DIR$/learnbtc/app/Http/Controllers/BlockchainAPI.php" />
-        <option value="$PROJECT_DIR$/learnbtc/routes/web.php" />
-        <option value="$PROJECT_DIR$/learnbtc/resources/lang/en/labels.php" />
-        <option value="$PROJECT_DIR$/a" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_01_24_120730_create_orders_table.php" />
-        <option value="$PROJECT_DIR$/app/Models/Traits/Uuid.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CartController.php" />
-        <option value="$PROJECT_DIR$/public/js/main.js" />
-        <option value="$PROJECT_DIR$/resources/views/backend/settings/footer.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Frontend/Auth/ChangePasswordController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/BlockchainAPI.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/RepositoryContract.php" />
+        <option value="$PROJECT_DIR$/resources/views/backend/settings/social.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/layouts/app1.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend-rtl/layouts/app1.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/layouts/app3.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/layouts/app4.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend-rtl/layouts/app4.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/layouts/app2.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/Admin/UpdateTeachersRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/Admin/UpdateTestsRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/Admin/UpdateUsersRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/Backend/Auth/User/UpdateUserPasswordRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Traits/FileUploadTrait.php" />
+        <option value="$PROJECT_DIR$/resources/sass/frontend-rtl/style.scss" />
+        <option value="$PROJECT_DIR$/resources/sass/frontend-rtl/costume.scss" />
+        <option value="$PROJECT_DIR$/test-curl-request.php" />
+        <option value="$PROJECT_DIR$/curl-request.php" />
+        <option value="$PROJECT_DIR$/resources/views/backend/orders/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/backend/orders/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/cart/partials/order-stats.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/Blog.php" />
+        <option value="$PROJECT_DIR$/app/Models/Course.php" />
+        <option value="$PROJECT_DIR$/app/Models/CourseTimeline.php" />
+        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" />
+        <option value="$PROJECT_DIR$/public/css/frontend.css" />
+        <option value="&lt;a218a5d5-e263-43a1-84b9-6cb95a6ef769&gt;/.env" />
+        <option value="$PROJECT_DIR$/resources/views/frontend-rtl/layouts/partials/footer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/layouts/partials/footer.blade.php" />
+        <option value="$PROJECT_DIR$/public/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/resources/views/backend/includes/header.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
+        <option value="$PROJECT_DIR$/app/Models/Review.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/coinbaseapicontroller1234.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CoinBaseApicontroller1234.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/cart/checkout.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/backend/settings/general.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend-rtl/cart/checkout.blade.php" />
+        <option value="$PROJECT_DIR$/error_log" />
+        <option value="$PROJECT_DIR$/resources/js/frontend/app.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CoinbaseAPIController.php" />
+        <option value="$PROJECT_DIR$/resources/js/coinbase.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CoursesController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LandingMainPageController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/vendor/coinbase/coinbase-commerce/src/ApiClient.php" />
-        <option value="$PROJECT_DIR$/phpapitest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LandingPageController.php" />
+        <option value="$PROJECT_DIR$/app/Helpers/General/Timezone.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
@@ -389,10 +576,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="1091" />
+    <option name="y" value="89" />
+    <option name="width" value="160" />
+    <option name="height" value="39" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -400,7 +587,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -411,25 +597,133 @@
             <path>
               <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
               <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
               <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
               <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="ru" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend-rtl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend-rtl" type="462c0819:PsiDirectoryNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend-rtl" type="462c0819:PsiDirectoryNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend-rtl" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend-rtl" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend-rtl" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="breadcrumbs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="breadcrumbs" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="breadcrumbs" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learnbtc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learnbtc" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -442,16 +736,22 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="13.1.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="jsx.switch.disabled" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PhpstormProjects/Angularjs/discours-io-frontend" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="node" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OSPanelNew\OSPanel\domains\localhost\learnbtc\resources\lang" />
+      <recent name="D:\OSPanelNew\OSPanel\domains\localhost\learnbtc\app\Http\Controllers" />
       <recent name="D:\OSPanelNew\OSPanel\domains\localhost\learnbtc.com\learnbtc\app\Http\Controllers\Frontend\Auth" />
     </key>
   </component>
@@ -467,9 +767,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.phpapitest.php">
+  <component name="RunManager" selected="JavaScript Debug.CoinBaseApicontroller1234.php">
+    <configuration name="CoinBaseApicontroller1234.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://185.61.154.208/app/Http/Controllers/CoinBaseApicontroller1234.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="app.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="resources/js/frontend/app.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+    <configuration name="curl-request.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/curl-request.php">
       <method v="2" />
     </configuration>
     <configuration name="phpapitest.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/phpapitest.php">
@@ -477,6 +786,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.CoinBaseApicontroller1234.php" />
         <item itemvalue="PHP Script.phpapitest.php" />
       </list>
     </recent_temporary>
@@ -499,7 +809,14 @@
       <workItem from="1579880368963" duration="7330000" />
       <workItem from="1580124249380" duration="2243000" />
       <workItem from="1580194675113" duration="16121000" />
-      <workItem from="1580239511367" duration="7826000" />
+      <workItem from="1580239511367" duration="34984000" />
+      <workItem from="1580340253339" duration="20844000" />
+      <workItem from="1580400598731" duration="16223000" />
+      <workItem from="1580469891936" duration="8508000" />
+      <workItem from="1580505824621" duration="59000" />
+      <workItem from="1580505937347" duration="91000" />
+      <workItem from="1580506176420" duration="63000" />
+      <workItem from="1580506270087" duration="28839000" />
     </task>
     <task id="LOCAL-00001" summary="db upload">
       <created>1579711718361</created>
@@ -526,7 +843,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65347000" />
+    <option name="totallyTimeSpent" value="167132000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -541,55 +858,66 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34221748" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="File Transfer" sideWeight="0.4978678" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.50268817" weight="0.21444201" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.50268817" weight="0.14842904" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946237" weight="0.26258206" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.73507464" weight="0.51570964" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.82302773" visible="true" weight="0.21776815" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.17697228" side_tool="true" visible="true" weight="0.21776815" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.7345416" weight="0.51570964" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.82196164" visible="true" weight="0.31419286" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.17803837" side_tool="true" weight="0.22860238" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" order="12" sideWeight="0.49733475" weight="0.108342364" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Remote Host" order="4" weight="0.22014925" />
+      <window_info anchor="right" id="Remote Host" order="4" weight="0.017590618" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23387097" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24520256" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" />
-      <window_info anchor="bottom" id="Run" order="4" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3129103" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Remote Host" order="0" visible="true" weight="0.16989248" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.50268817" weight="0.14842904" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946237" weight="0.26258206" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.7345416" weight="0.51570964" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.82196164" visible="true" weight="0.1971831" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.17803837" side_tool="true" weight="0.22860238" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" order="12" sideWeight="0.49733475" weight="0.108342364" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Remote Host" order="4" visible="true" weight="0.017590618" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -641,206 +969,281 @@
     <MESSAGE value="db upload" />
     <option name="LAST_COMMIT_MESSAGE" value="db upload" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php</url>
-          <line>63</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env" />
-    <entry file="file://$PROJECT_DIR$/readme.md" />
-    <entry file="file://$PROJECT_DIR$/routes/backend/auth.php" />
-    <entry file="file://$PROJECT_DIR$/routes/backend/admin.php" />
-    <entry file="file://$PROJECT_DIR$/config/filesystems.php" />
-    <entry file="file://$PROJECT_DIR$/uploaddumpmysql.sql" />
-    <entry file="file://$PROJECT_DIR$/uploaddumpmysql.php" />
-    <entry file="file://$PROJECT_DIR$/index.php" />
-    <entry file="file://$PROJECT_DIR$/composer.json" />
-    <entry file="file://$PROJECT_DIR$/app/Rules/Auth/ChangePassword.php" />
-    <entry file="file://$PROJECT_DIR$/app/Rules/Auth/UnusedPassword.php" />
-    <entry file="file://$PROJECT_DIR$/routes/breadcrumbs/backend/auth/role.php" />
-    <entry file="file://$PROJECT_DIR$/routes/breadcrumbs/backend/auth/user.php" />
-    <entry file="file://$PROJECT_DIR$/routes/breadcrumbs/backend/backend.php" />
-    <entry file="file://$PROJECT_DIR$/routes/frontend/home.php" />
-    <entry file="file://$PROJECT_DIR$/routes/api.php" />
-    <entry file="file://$PROJECT_DIR$/routes/breadcrumbs.php" />
-    <entry file="file://$PROJECT_DIR$/routes/channels.php" />
-    <entry file="file://$PROJECT_DIR$/routes/breadcrumbs/backend/auth.php" />
-    <entry file="file://$PROJECT_DIR$/routes/frontend/auth.php" />
-    <entry file="file://$PROJECT_DIR$/routes/breadcrumbs/backend/log-viewer.php" />
-    <entry file="file://$PROJECT_DIR$/routes/console.php" />
-    <entry file="file://$PROJECT_DIR$/asdads;as'd" />
-    <entry file="file://$PROJECT_DIR$/resources/lang/en/labels.php" />
-    <entry file="file://$PROJECT_DIR$/_ide_helper.php" />
-    <entry file="file://$PROJECT_DIR$/.phpstorm.meta.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Backend/Auth/Role/UpdateRoleRequest.php" />
-    <entry file="file://$PROJECT_DIR$/vendor/paypal/rest-api-sdk-php/lib/PayPal/Rest/ApiContext.php" />
-    <entry file="file://$PROJECT_DIR$/composer.lock" />
-    <entry file="file://$PROJECT_DIR$/learnbtc/a" />
-    <entry file="file://$PROJECT_DIR$/learnbtc/app/Http/Controllers/BlockchainAPI.php" />
-    <entry file="file://$PROJECT_DIR$/learnbtc/routes/web.php" />
-    <entry file="file://$PROJECT_DIR$/learnbtc/resources/lang/en/labels.php" />
-    <entry file="file://$PROJECT_DIR$/addsa" />
-    <entry file="file://$PROJECT_DIR$/a" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_24_120730_create_orders_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Frontend/Auth/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Traits/Uuid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Frontend/Auth/UserSessionRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CartController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="363" column="5" lean-forward="true" selection-start-line="363" selection-start-column="5" selection-end-line="363" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#70#0#PHP" expanded="true" />
-            <element signature="e#891#1681#0#PHP" />
-            <element signature="e#1687#2490#0#PHP" />
-            <element signature="e#2496#3724#0#PHP" />
-            <element signature="e#3730#5523#0#PHP" />
-            <element signature="e#5529#5655#0#PHP" />
-            <element signature="e#5661#6276#0#PHP" />
-            <element signature="e#6628#7026#0#PHP" />
-            <element signature="e#7696#8094#0#PHP" />
-            <element signature="e#7354#9953#0#PHP" />
-            <element signature="e#9959#11034#0#PHP" />
-            <element signature="e#11040#12868#0#PHP" />
-            <element signature="e#12875#14030#0#PHP" />
-            <element signature="e#14036#14199#0#PHP" />
-            <element signature="e#14205#17200#0#PHP" />
-            <element signature="e#17207#18215#0#PHP" />
-            <element signature="e#18222#19391#0#PHP" />
-            <element signature="e#19397#20336#0#PHP" />
-            <element signature="e#20342#21301#0#PHP" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Backend/Auth/PermissionRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Backend/Auth/RoleRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Backend/Auth/SessionRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Backend/Auth/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Repositories/RepositoryContract.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CoinBaseApicontroller1234.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/main.js">
+    <entry file="file://$PROJECT_DIR$/vendor/composer/installed.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="228" selection-start-line="228" selection-end-line="241" selection-end-column="3" />
+        <state relative-caret-position="197">
+          <caret line="1088" column="13" selection-start-line="1088" selection-start-column="13" selection-end-line="1088" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="272" column="13" selection-start-line="272" selection-start-column="13" selection-end-line="272" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/backend/settings/general.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="782" column="168" lean-forward="true" selection-start-line="782" selection-start-column="168" selection-end-line="782" selection-end-column="170" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="e#386#1700#0#HTML" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/settings/footer.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/cart/checkout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="517" column="17" lean-forward="true" selection-start-line="517" selection-start-column="17" selection-end-line="517" selection-end-column="17" />
+        <state relative-caret-position="36">
+          <caret line="135" column="42" lean-forward="true" selection-start-line="135" selection-start-column="42" selection-end-line="135" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#29551#0#Blade" />
+            <element signature="e#0#29551#0#Blade" />
+            <element signature="e#8248#10190#0#HTML" />
+            <element signature="e#10240#15885#0#HTML" />
+            <element signature="e#0#29551#0#Blade" />
+            <element signature="e#0#32940#0#Blade" />
+            <element signature="e#0#29551#0#Blade" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Traits/FileUploadTrait.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/backend/auth/user/show/tabs/overview.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="68">
+          <caret line="4" column="90" lean-forward="true" selection-start-line="4" selection-start-column="90" selection-end-line="4" selection-end-column="90" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/resources/views/backend/account/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        <state relative-caret-position="85">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resolvers/SocialUserResolver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-299" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend-rtl/cart/checkout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/error_log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-484" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/plugins.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#40#85#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/Auth/ChangePasswordController.php">
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/GenerateSitemap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="136">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlogController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CoinbaseAPIController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="107" column="24" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="24" />
+        <state relative-caret-position="-1793">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding>
-            <element signature="e#230#632#0#PHP" />
-            <element signature="e#639#1166#0#PHP" />
-            <element signature="e#1172#2278#0#PHP" />
-            <element signature="e#2284#2775#0#PHP" />
-            <element signature="e#2781#3343#0#PHP" />
-            <element signature="e#3349#3588#0#PHP" />
+            <element signature="e#40#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/curl-request.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/frontend/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/coinbase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Rules/Auth/ChangePassword.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Rules/Auth/UnusedPassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="e#34#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Backup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#40#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CoursesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="168" column="7" selection-start-line="168" selection-start-column="7" selection-end-line="193" selection-end-column="5" />
+          <folding>
+            <element signature="e#40#60#0#PHP" expanded="true" />
+            <element signature="e#2360#4322#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+        <state relative-caret-position="609">
+          <caret line="148" column="57" selection-start-line="148" selection-start-column="57" selection-end-line="148" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/coinbase/coinbase-commerce/src/ApiClient.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LandingPageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="358" column="1" selection-start-line="358" selection-start-column="1" selection-end-line="358" selection-end-column="1" />
+        <state relative-caret-position="17">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding>
-            <element signature="e#35#77#0#PHP" expanded="true" />
+            <element signature="e#40#71#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phpunit.xml">
+    <entry file="file://$PROJECT_DIR$/app/Helpers/General/Timezone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/fr/alerts.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/phpapitest.php">
+    <entry file="file://$PROJECT_DIR$/resources/lang/ru/alerts.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/ru/auth.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/ru/buttons.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/ru/configmanager.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/ru/custom-menu.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/ru/datatable.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/ru/exceptions.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/ru/http.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/ru/labels.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/ru/menus.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/ru/navs.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/ru/pagination.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/ru/passwords.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/ru/roles.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/ru/strings.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/ru/validation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
+        <state relative-caret-position="-4002" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlockchainAPIController.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="103" column="20" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
-          <folding>
-            <element signature="e#172#292#0#PHP" />
-            <element signature="e#306#342#0#PHP" />
-            <element signature="e#586#622#0#PHP" />
-            <element signature="e#628#664#0#PHP" />
-            <element signature="e#1048#1614#0#PHP" />
-            <element signature="e#1620#1658#0#PHP" />
-            <element signature="e#1664#1700#0#PHP" />
-            <element signature="e#2743#3695#0#PHP" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>

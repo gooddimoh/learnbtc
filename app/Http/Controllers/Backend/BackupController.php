@@ -9,10 +9,8 @@ use App\Http\Controllers\Controller;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 
-class BackupController extends Controller
-{
-    public function index()
-    {
+class BackupController extends Controller {
+    public function index(){
         return view('backend.backup.index');
     }
 

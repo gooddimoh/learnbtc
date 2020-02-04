@@ -12,7 +12,7 @@
                         <div class="col-md-4">
                             <div class="footer-widget ">
                                 <div class="footer-logo mb35">
-                                    <img width="40px" height="40px" src="https://www.pinclipart.com/picdir/middle/382-3823373_d2s-learning-management-system-learning-management-system-logo.png" alt="logo">
+                                    <img width="40px" height="40px" src="https://learnwithbtc.com/storage/logos/logo-white-image.png" alt="logo">
                                 </div>
                                 @if($footer_data->short_description->status == 1)
                                     <div class="footer-about-text">
@@ -99,8 +99,8 @@
                             @if($footer_data->copyright_text->status == 1)
                                 <div class="col-md-6">
                                     <div class="copy-right-text">
-                                        <p>Powered By <a href="https://www.neonlms.com/" target="_blank" class="mr-4">
-                                                NeonLMS</a> {!!  $footer_data->copyright_text->text !!}</p>
+                                        <p>Powered By <a href="https://learnwithbtc.com//" target="_blank" class="mr-4">
+                                                learnwithbtc</a> {!!  $footer_data->copyright_text->text !!}</p>
                                     </div>
                                 </div>
                             @endif

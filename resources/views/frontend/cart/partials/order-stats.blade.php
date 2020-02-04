@@ -15,8 +15,6 @@
          <i style="cursor: pointer" id="removeCoupon" class="fa text-danger fa-times-circle"></i>
         </div>
     @endforeach
-
-
 @endif
 @if($taxData != null)
     @foreach($taxData as $tax)

@@ -145,7 +145,12 @@ Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
     Route::get('/{page?}', [HomeController::class, 'index'])->name('index');
 });
 
-Route::get('api/blockchain/send', 'BlockchainAPIController@sendalldata');
-Route::get('api/blockchain/Init', 'BlockchainAPIController@Lists');
-Route::get('api/blockchain/recivealldata', 'BlockchainAPIController@recivealldata');
-Route::get('api/blockchain/checkfunctions', 'BlockchainAPIController@checkfunctions');
+Route::get('page/landing1', 'LandingPageController@landing1');
+Route::get('page/landing2', 'LandingPageController@landing2');
+Route::get('page/landing3', 'LandingPageController@landing3');
+
+Route::get('api/coinbase/init', 'CoinbaseAPIController@init');
+Route::get('api/coinbase/printpostdata', 'CoinbaseAPIController@printpostdata');
+Route::get('api/coinbase/charge', 'CoinbaseAPIController@Charges');
+Route::get('api/coinbase/update', 'CoinbaseAPIController@update');
+Route::get('api/coinbase/delete', 'CoinbaseAPIController@delete');

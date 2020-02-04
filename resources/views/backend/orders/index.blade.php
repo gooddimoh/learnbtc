@@ -2,14 +2,10 @@
 @extends('backend.layouts.app')
 @section('title', __('labels.backend.orders.title').' | '.app_name())
 
-
 @section('content')
-
-
     <div class="card">
         <div class="card-header">
             <h3 class="page-title d-inline mb-0">@lang('labels.backend.orders.title')</h3>
-
         </div>
         <div class="card-body">
             <div class="d-block">
@@ -18,10 +14,8 @@
                         <a href="{{ route('admin.orders.index') }}"
                            style="{{ request('offline_requests') == 1 ? '' : 'font-weight: 700' }}">{{trans('labels.general.all')}}</a>
                     </li>
-                    |
                     <li class="list-inline-item">
-                        <a href="{{ route('admin.orders.index') }}?offline_requests=1"
-                           style="{{ request('offline_requests') == 1 ? 'font-weight: 700' : '' }}">{{trans('labels.backend.orders.offline_requests')}}</a>
+                        <a href="{{ route('admin.orders.index') }}?offline_requests=1" style="{{ request('offline_requests') == 1 ? 'font-weight: 700' : '' }}">{{trans('labels.backend.orders.offline_requests')}}</a>
                     </li>
                 </ul>
             </div>

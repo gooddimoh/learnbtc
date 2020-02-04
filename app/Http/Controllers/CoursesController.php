@@ -14,8 +14,7 @@ use Stripe\Charge;
 use Stripe\Customer;
 use Cart;
 
-class CoursesController extends Controller
-{
+class CoursesController extends Controller {
 
     private $path;
 
@@ -34,8 +33,7 @@ class CoursesController extends Controller
         $this->path = $path;
     }
 
-    public function all()
-    {
+    public function all(){
         if (request('type') == 'popular') {
             $courses = Course::withoutGlobalScope('filter')->where('published', 1)->where('popular', '=', 1)->orderBy('id', 'desc')->paginate(9);
 
@@ -67,8 +65,7 @@ class CoursesController extends Controller
         return view( $this->path.'.courses.index', compact('courses', 'purchased_courses', 'recent_news','featured_courses','categories'));
     }
 
-    public function show($course_slug)
-    {
+    public function show($course_slug){
         $continue_course=NULL;
         $recent_news = Blog::orderBy('created_at', 'desc')->take(2)->get();
         $course = Course::withoutGlobalScope('filter')->where('slug', $course_slug)->with('publishedLessons')->first();
@@ -194,7 +191,6 @@ class CoursesController extends Controller
             return view( $this->path.'.courses.course', compact('course', 'purchased_course', 'recent_news','completed_lessons','continue_course', 'course_rating', 'total_ratings','lessons', 'review'));
         }
         return abort(404);
-
     }
 
 

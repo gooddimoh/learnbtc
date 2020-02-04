@@ -16,7 +16,7 @@ class ConfigController extends Controller
 
     public function getGeneralSettings()
     {
-        if(!auth()->user()->isAdmin()){
+        if (!auth()->user()->isAdmin()) {
             return abort(403);
         }
         $type = config('theme_layout');
@@ -26,7 +26,7 @@ class ConfigController extends Controller
         $sections = json_decode($sections->value);
         $app_locales = Locale::get();
         $api_clients = OauthClient::paginate(10);
-        return view('backend.settings.general', compact('sections', 'footer_data','app_locales','api_clients'));
+        return view('backend.settings.general', compact('sections', 'footer_data', 'app_locales', 'api_clients'));
     }
 
     public function saveGeneralSettings(Request $request)
@@ -80,6 +80,13 @@ class ConfigController extends Controller
         if ($request->get('payment_offline_active') == null) {
             $requests['payment_offline_active'] = 0;
         }
+
+        /* Coinbase */
+        if ($request->get('payment_coinbase_active') == null) {
+            $requests['payment_offline_active'] = 0;
+        }
+        /* Coinbase */
+
         if ($request->get('backup__status') == null) {
             $requests['backup__status'] = 0;
         }
@@ -105,9 +112,9 @@ class ConfigController extends Controller
                 $config->value = $value;
                 $config->save();
 
-                if($key === 'app.locale'){
-                    Locale::where('short_name','!=',$value)->update(['is_default' => 0]);
-                    $locale = Locale::where('short_name','=',$value)->first();
+                if ($key === 'app.locale') {
+                    Locale::where('short_name', '!=', $value)->update(['is_default' => 0]);
+                    $locale = Locale::where('short_name', '=', $value)->first();
                     $locale->is_default = 1;
                     $locale->save();
                 }
@@ -119,7 +126,7 @@ class ConfigController extends Controller
 
     public function getSocialSettings()
     {
-        if(!auth()->user()->isAdmin()){
+        if (!auth()->user()->isAdmin()) {
             return abort(403);
         }
         return view('backend.settings.social');
@@ -163,7 +170,7 @@ class ConfigController extends Controller
 
     public function getContact()
     {
-        if(!auth()->user()->isAdmin()){
+        if (!auth()->user()->isAdmin()) {
             return abort(403);
         }
         $contact_data = config('contact_data');
@@ -172,7 +179,7 @@ class ConfigController extends Controller
 
     public function getFooter()
     {
-        if(!auth()->user()->isAdmin()){
+        if (!auth()->user()->isAdmin()) {
             return abort(403);
         }
         $footer_data = config('footer_data');
@@ -181,7 +188,7 @@ class ConfigController extends Controller
 
     public function getNewsletterConfig()
     {
-        if(!auth()->user()->isAdmin()){
+        if (!auth()->user()->isAdmin()) {
             return abort(403);
         }
         $newsletter_config = config('newsletter_config');
@@ -220,7 +227,7 @@ class ConfigController extends Controller
         \Illuminate\Support\Facades\Artisan::call('route:clear');
         \Illuminate\Support\Facades\Artisan::call('view:clear');
 
-        shell_exec('cd '.base_path().'/public');
+        shell_exec('cd ' . base_path() . '/public');
         shell_exec('rm storage');
         \File::link(storage_path('app/public'), public_path('storage'));
         return back();

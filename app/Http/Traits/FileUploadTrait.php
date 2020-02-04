@@ -72,12 +72,11 @@ trait FileUploadTrait
             mkdir(public_path('storage/uploads'), 0777);
             mkdir(public_path('storage/upload/thumb'), 0777);
         }
+
         $finalRequest = $request;
 
         foreach ($request->all() as $key => $value) {
-
             if ($request->hasFile($key)) {
-
                 if ($key == $downloadable_file_input) {
                     foreach ($request->file($key) as $item) {
                         $extension = array_last(explode('.',$item->getClientOriginalName()));
@@ -95,8 +94,6 @@ trait FileUploadTrait
                         ]);
                     }
                     $finalRequest = $finalRequest = new Request($request->except($downloadable_file_input));
-
-
                 } else {
                     if($key != 'video_file'){
                         if($key == 'add_pdf'){
@@ -135,18 +132,17 @@ trait FileUploadTrait
                                 'url' => asset('storage/uploads/'.$filename),
                                 'size' => $size,
                             ]);
+
                             $finalRequest = new Request(array_merge($finalRequest->all(), [$key => $filename]));
                         } else{
                             $extension = array_last(explode('.',$request->file($key)->getClientOriginalName()));
                             $name = array_first(explode('.',$request->file($key)->getClientOriginalName()));
                             $filename = time() . '-' . str_slug($name).'.'.$extension;
-
                             $request->file($key)->move(public_path('storage/uploads'), $filename);
                             $finalRequest = new Request(array_merge($finalRequest->all(), [$key => $filename]));
                             $model->lesson_image = $filename;
                             $model->save();
                         }
-
                     }
                 }
             }

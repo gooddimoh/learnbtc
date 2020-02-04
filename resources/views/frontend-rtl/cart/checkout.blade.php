@@ -6,9 +6,11 @@
         input[type="radio"] {
             display: inline-block !important;
         }
+
         .course-rate li {
-            color: #ffc926!important;
+            color: #ffc926 !important;
         }
+
         #applyCoupon {
             box-shadow: none !important;
             color: #fff !important;
@@ -26,7 +28,8 @@
         #coupon-error {
             color: red;
         }
-        .in-total:not(:first-child):not(:last-child){
+
+        .in-total:not(:first-child):not(:last-child) {
             font-size: 15px;
         }
 
@@ -35,7 +38,6 @@
 
 @endpush
 @section('content')
-
     <!-- Start of breadcrumb section
         ============================================= -->
     <section id="breadcrumb" class="breadcrumb-section relative-position backgroud-style">
@@ -43,17 +45,13 @@
         <div class="container">
             <div class="page-breadcrumb-content text-center">
                 <div class="page-breadcrumb-title">
-                    <h2 class="breadcrumb-head black bold"><span>@lang('labels.frontend.cart.checkout')</span> </h2>
+                    <h2 class="breadcrumb-head black bold"><span>@lang('labels.frontend.cart.checkout')</span></h2>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End of breadcrumb section
-        ============================================= -->
-
-
-    <!-- Start of Checkout content
-        ============================================= -->
+    <!-- End of breadcrumb section ============================================= -->
+    <!-- Start of Checkout content ============================================= -->
     <section id="checkout" class="checkout-section">
         <div class="container">
             <div class="section-title mb45 headline text-center">
@@ -67,10 +65,8 @@
                             <div class="section-title-2  headline text-left">
                                 <h2>@lang('labels.frontend.cart.order_item')</h2>
                             </div>
-
                             <div class="course-list-view table-responsive">
                                 <table class="table">
-
                                     <thead>
                                     <tr class="list-head text-uppercase">
                                         <th>@lang('labels.frontend.cart.course_name')</th>
@@ -84,9 +80,13 @@
                                             <tr class="position-relative">
 
                                                 <td>
-                                                    <a style="right: auto;left: 2%;" class="text-danger position-absolute" href="{{route('cart.remove',['course'=>$course])}}"><i class="fa fa-times"></i></a>
+                                                    <a style="right: auto;left: 2%;"
+                                                       class="text-danger position-absolute"
+                                                       href="{{route('cart.remove',['course'=>$course])}}"><i
+                                                                class="fa fa-times"></i></a>
                                                     <div class="course-list-img-text">
-                                                        <div class="course-list-img" @if($course->course_image != "") style="background-image: url({{asset('storage/uploads/'.$course->course_image)}})" @endif >
+                                                        <div class="course-list-img"
+                                                             @if($course->course_image != "") style="background-image: url({{asset('storage/uploads/'.$course->course_image)}})" @endif >
 
                                                         </div>
                                                         <div class="course-list-text">
@@ -98,7 +98,7 @@
                                                                             href="#">  @if($course->free == 1)
                                                                             {{trans('labels.backend.courses.fields.free')}}
                                                                         @else
-                                                                             {{$appCurrency['symbol'].' '.$course->price}}
+                                                                            {{$appCurrency['symbol'].' '.$course->price}}
                                                                         @endif</a></span>
                                                                 <div class="course-rate ul-li">
                                                                     <ul>
@@ -132,7 +132,7 @@
                             @if((config('services.stripe.active') == 0) && (config('paypal.active') == 0) && (config('payment_offline_active') == 0))
                                 <div class="order-payment">
                                     <div class="section-title-2  headline text-left">
-                                <h2>@lang('labels.frontend.cart.no_payment_method')</h2>
+                                        <h2>@lang('labels.frontend.cart.no_payment_method')</h2>
                                     </div>
                                 </div>
                             @else
@@ -149,8 +149,10 @@
                                                             <div class="method-header-text">
                                                                 <div class="radio">
                                                                     <label>
-                                                                        <input data-toggle="collapse" href="#collapsePaymentOne"
-                                                                               type="radio" name="paymentMethod" value="1"
+                                                                        <input data-toggle="collapse"
+                                                                               href="#collapsePaymentOne"
+                                                                               type="radio" name="paymentMethod"
+                                                                               value="1"
                                                                                checked>
                                                                         @lang('labels.frontend.cart.payment_cards')
                                                                     </label>
@@ -160,7 +162,8 @@
 
                                                         <div class="col-md-6">
                                                             <div class="payment-img float-right">
-                                                                <img src="{{asset('assets/img/banner/p-1.jpg')}}" alt="">
+                                                                <img src="{{asset('assets/img/banner/p-1.jpg')}}"
+                                                                     alt="">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -170,9 +173,11 @@
                                                      data-parent="#accordion">
 
 
-                                                    <form accept-charset="UTF-8" action="{{route('cart.stripe.payment')}}"
+                                                    <form accept-charset="UTF-8"
+                                                          action="{{route('cart.stripe.payment')}}"
                                                           class="require-validation" data-cc-on-file="false"
-                                                          data-stripe-publishable-key="{{config('services.stripe.key')}}" id="payment-form"
+                                                          data-stripe-publishable-key="{{config('services.stripe.key')}}"
+                                                          id="payment-form"
                                                           method="POST">
 
                                                         <div style="margin:0;padding:0;display:inline">
@@ -182,26 +187,32 @@
                                                         </div>
 
 
-
                                                         <div class="payment-info">
-                                                            <label class=" control-label">@lang('labels.frontend.cart.name_on_card') :</label>
-                                                            <input type="text" autocomplete='off' class="form-control required card-name"
-                                                                   placeholder="@lang('labels.frontend.cart.name_on_card_placeholder')" value="">
+                                                            <label class=" control-label">@lang('labels.frontend.cart.name_on_card')
+                                                                :</label>
+                                                            <input type="text" autocomplete='off'
+                                                                   class="form-control required card-name"
+                                                                   placeholder="@lang('labels.frontend.cart.name_on_card_placeholder')"
+                                                                   value="">
                                                         </div>
                                                         <div class="payment-info">
-                                                            <label class=" control-label">@lang('labels.frontend.cart.card_number') :</label>
+                                                            <label class=" control-label">@lang('labels.frontend.cart.card_number')
+                                                                :</label>
                                                             <input autocomplete='off' type="text"
                                                                    class="form-control required card-number"
-                                                                   placeholder="@lang('labels.frontend.cart.card_number_placeholder')" value="">
+                                                                   placeholder="@lang('labels.frontend.cart.card_number_placeholder')"
+                                                                   value="">
                                                         </div>
                                                         <div class="payment-info input-2">
-                                                            <label class=" control-label">@lang('labels.frontend.cart.cvv') :</label>
+                                                            <label class=" control-label">@lang('labels.frontend.cart.cvv')
+                                                                :</label>
                                                             <input type="text" class="form-control card-cvc required"
                                                                    placeholder="@lang('labels.frontend.cart.cvv')"
                                                                    value="">
                                                         </div>
                                                         <div class="payment-info input-2">
-                                                            <label class=" control-label">@lang('labels.frontend.cart.expiration_date') :</label>
+                                                            <label class=" control-label">@lang('labels.frontend.cart.expiration_date')
+                                                                :</label>
                                                             <input autocomplete='off' type="text"
                                                                    class="form-control required card-expiry-month"
                                                                    placeholder="@lang('labels.frontend.cart.mm')"
@@ -213,7 +224,8 @@
                                                         </div>
                                                         <button type="submit"
                                                                 class="text-white genius-btn mt25 gradient-bg text-center text-uppercase  bold-font">
-                                                            @lang('labels.frontend.cart.pay_now') <i class="fas fa-caret-right"></i>
+                                                            @lang('labels.frontend.cart.pay_now') <i
+                                                                    class="fas fa-caret-right"></i>
                                                         </button>
                                                         <div class="row mt-3">
                                                             <div class="col-12 error form-group d-none">
@@ -226,7 +238,6 @@
                                                 </div>
                                             </div>
                                         @endif
-
                                         @if(config('paypal.active') == 1)
                                             <div class="payment-method w-100 mb-0">
                                                 <div class="payment-method-header">
@@ -235,8 +246,10 @@
                                                             <div class="method-header-text">
                                                                 <div class="radio">
                                                                     <label>
-                                                                        <input data-toggle="collapse" href="#collapsePaymentTwo"
-                                                                               type="radio" name="paymentMethod" value="2">
+                                                                        <input data-toggle="collapse"
+                                                                               href="#collapsePaymentTwo"
+                                                                               type="radio" name="paymentMethod"
+                                                                               value="2">
                                                                         @lang('labels.frontend.cart.paypal')
                                                                     </label>
                                                                 </div>
@@ -245,27 +258,29 @@
 
                                                         <div class="col-md-6">
                                                             <div class="payment-img float-right">
-                                                                <img src="{{asset('assets/img/banner/p-2.jpg')}}" alt="">
+                                                                <img src="{{asset('assets/img/banner/p-2.jpg')}}"
+                                                                     alt="">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="check-out-form collapse disabled" id="collapsePaymentTwo"
                                                      data-parent="#accordion">
-                                                    <form class="w3-container w3-display-middle w3-card-4 " method="POST"
+                                                    <form class="w3-container w3-display-middle w3-card-4 "
+                                                          method="POST"
                                                           id="payment-form" action="{{route('cart.paypal.payment')}}">
                                                         {{ csrf_field() }}
                                                         <p> @lang('labels.frontend.cart.pay_securely_paypal')</p>
 
                                                         <button type="submit"
                                                                 class="text-white genius-btn mt25 gradient-bg text-center text-uppercase  bold-font">
-                                                            @lang('labels.frontend.cart.pay_now') <i class="fas fa-caret-right"></i>
+                                                            @lang('labels.frontend.cart.pay_now') <i
+                                                                    class="fas fa-caret-right"></i>
                                                         </button>
                                                     </form>
                                                 </div>
                                             </div>
                                         @endif
-
                                         @if(config('payment_offline_active') == 1)
                                             <div class="payment-method w-100 mb-0">
                                                 <div class="payment-method-header">
@@ -277,7 +292,7 @@
                                                                         <input data-toggle="collapse"
                                                                                href="#collapsePaymentThree" type="radio"
                                                                                name="paymentMethod" value="3">
-                                                                        @lang('labels.frontend.cart.offline_payment')
+                                                                        <p>Coinbase payment gateway</p>
                                                                     </label>
                                                                 </div>
                                                             </div>
@@ -292,14 +307,57 @@
                                                         @csrf
                                                         <button type="submit"
                                                                 class="text-white genius-btn mt25 gradient-bg text-center text-uppercase  bold-font">
-                                                            @lang('labels.frontend.cart.request_assistance') <i class="fas fa-caret-right"></i>
+                                                            @lang('labels.frontend.cart.request_assistance') <i
+                                                                    class="fas fa-caret-right"></i>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        @endif
+                                        @if(config('coinbase.active') == 10)
+                                            <div class="payment-method w-100 mb-0">
+                                                <div class="payment-method-header">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="method-header-text">
+                                                                <div class="radio">
+                                                                    <label>
+                                                                        <input data-toggle="collapse"
+                                                                               href="#collapsePaymentTwo"
+                                                                               type="radio" name="paymentMethod"
+                                                                               value="2">
+                                                                        @lang('labels.frontend.cart.paypal')
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="payment-img float-right">
+                                                                <img src="{{asset('assets/img/banner/p-2.jpg')}}"
+                                                                     alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="check-out-form collapse disabled" id="collapsePaymentTwo"
+                                                     data-parent="#accordion">
+                                                    <form class="w3-container w3-display-middle w3-card-4 "
+                                                          method="POST"
+                                                          id="payment-form" action="{{route('cart.paypal.payment')}}">
+                                                        {{ csrf_field() }}
+                                                        <p> @lang('labels.frontend.cart.pay_securely_paypal')</p>
+
+                                                        <button type="submit"
+                                                                class="text-white genius-btn mt25 gradient-bg text-center text-uppercase  bold-font">
+                                                            @lang('labels.frontend.cart.pay_now') <i
+                                                                    class="fas fa-caret-right"></i>
                                                         </button>
                                                     </form>
                                                 </div>
                                             </div>
                                         @endif
                                     </div>
-
                                     <div class="terms-text pb45 mt25">
                                         <p>@lang('labels.frontend.cart.confirmation_note')</p>
                                     </div>
@@ -327,7 +385,8 @@
                                 @else
                                     <div class="purchase-list mt15 ul-li-block">
 
-                                        <div class="in-total text-uppercase">@lang('labels.frontend.cart.total') <span>{{$appCurrency['symbol']}} 0.00</span></div>
+                                        <div class="in-total text-uppercase">@lang('labels.frontend.cart.total') <span>{{$appCurrency['symbol']}} 0.00</span>
+                                        </div>
                                     </div>
 
                                 @endif
@@ -338,7 +397,8 @@
                                 <h2 class="widget-title text-capitalize">@lang('labels.frontend.blog.featured_course')</h2>
                                 <div class="featured-course">
                                     <div class="best-course-pic-text relative-position pt-0">
-                                        <div class="best-course-pic relative-position " style="background-image: url({{asset('storage/uploads/'.$global_featured_course->course_image)}})">
+                                        <div class="best-course-pic relative-position "
+                                             style="background-image: url({{asset('storage/uploads/'.$global_featured_course->course_image)}})">
 
                                             @if($global_featured_course->trending == 1)
                                                 <div class="trend-badge-2 text-center text-uppercase">
@@ -346,19 +406,22 @@
                                                     <span>@lang('labels.frontend.badges.trending')</span>
                                                 </div>
                                             @endif
-                                                @if($global_featured_course->free == 1)
-                                                    <div class="trend-badge-3 text-center text-uppercase">
-                                                        <i class="fas fa-bolt"></i>
-                                                        <span>@lang('labels.backend.courses.fields.free')</span>
-                                                    </div>
-                                                @endif
+                                            @if($global_featured_course->free == 1)
+                                                <div class="trend-badge-3 text-center text-uppercase">
+                                                    <i class="fas fa-bolt"></i>
+                                                    <span>@lang('labels.backend.courses.fields.free')</span>
+                                                </div>
+                                            @endif
                                         </div>
                                         <div class="best-course-text" style="left: 0;right: 0;">
                                             <div class="course-title mb20 headline relative-position">
-                                                <h3><a href="{{ route('courses.show', [$global_featured_course->slug]) }}">{{$global_featured_course->title}}</a></h3>
+                                                <h3>
+                                                    <a href="{{ route('courses.show', [$global_featured_course->slug]) }}">{{$global_featured_course->title}}</a>
+                                                </h3>
                                             </div>
                                             <div class="course-meta">
-                                                <span class="course-category"><a href="{{route('courses.category',['category'=>$global_featured_course->category->slug])}}">{{$global_featured_course->category->name}}</a></span>
+                                                <span class="course-category"><a
+                                                            href="{{route('courses.category',['category'=>$global_featured_course->category->slug])}}">{{$global_featured_course->category->name}}</a></span>
                                                 <span class="course-author">{{ $global_featured_course->students()->count() }}</span>
                                             </div>
                                         </div>
@@ -428,7 +491,7 @@
             });
 
 
-            $(document).on('click','#removeCoupon',function () {
+            $(document).on('click', '#removeCoupon', function () {
                 $.ajax({
                     method: 'POST',
                     url: "{{route('cart.removeCoupon')}}",

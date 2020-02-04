@@ -133,8 +133,7 @@
                     <div class="container">
                         <div class="navbar-default">
                             <div class="navbar-header float-left">
-                                <a class="navbar-brand text-uppercase" href="{{url('/')}}"><img width="40px" height="40px"
-                                            src="https://www.pinclipart.com/picdir/middle/382-3823373_d2s-learning-management-system-learning-management-system-logo.png" alt="logo"></a>
+                                <a class="navbar-brand text-uppercase" href="{{url('/')}}"> </a>
                             </div><!-- /.navbar-header -->
                             <div class="cart-search float-right ul-li">
                                 <ul>
@@ -213,8 +212,7 @@
                             </nav>
 
                             <div class="mobile-menu">
-                                <div class="logo"><a href="{{url('/')}}"><img
-                                                src="{{asset('assets/img/logo/logo.png')}}" alt="Logo"></a></div>
+                                <div class="logo"><a href="{{url('/')}}"><img src="{{asset('assets/img/logo/logo.png')}}" alt="Logo"></a></div>
                                 <nav>
                                     <ul>
                                         @if(count($custom_menus) > 0 )

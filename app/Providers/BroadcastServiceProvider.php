@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\Broadcast;
 /**
  * Class BroadcastServiceProvider.
  */
-class BroadcastServiceProvider extends ServiceProvider
-{
+
+class BroadcastServiceProvider extends ServiceProvider {
     /**
      * Bootstrap any application services.
      *
