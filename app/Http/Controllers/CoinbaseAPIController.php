@@ -15,12 +15,6 @@ class CoinbaseAPIController extends Controller
      *
      **/
 
-    private $apiKey = "bd96d073-c822-4490-8493-0751a51cce56";
-
-    public function __construct($apiKey){
-        $this->apiKey = $apiKey;
-    }
-
     public function Init(){
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, "https://api.commerce.coinbase.com/checkouts");
@@ -164,8 +158,4 @@ class CoinbaseAPIController extends Controller
         var_dump($result);
     }
 
-    public function __destruct()
-    {
-        $this->apiKey;
-    }
 }
