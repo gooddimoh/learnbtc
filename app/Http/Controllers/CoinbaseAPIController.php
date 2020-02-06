@@ -142,7 +142,7 @@ class CoinbaseAPIController extends Controller
 
         $headers = array();
         $headers[] = "Content-Type: application/json";
-        $headers[] = "X-CC-Api-Key: {$this->apiKey}";
+        $headers[] = "X-CC-Api-Key: {$apiKey}";
         $headers[] = "X-CC-Version: 2018-03-22";
 
         $postdata = "{
