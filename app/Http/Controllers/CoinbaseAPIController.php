@@ -123,8 +123,10 @@ class CoinbaseAPIController extends Controller
         var_dump($result);
     }
 
-    public function Charges($paymentparams)
+    public function Charges()
     {
+        $paymentparams = $_GET["charge"];
+        var_dump($paymentparams)
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, "https://api.commerce.coinbase.com/checkouts");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
