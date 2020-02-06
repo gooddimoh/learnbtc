@@ -152,5 +152,6 @@ Route::get('page/landing3', 'LandingPageController@landing3');
 Route::get('api/coinbase/init', 'CoinbaseAPIController@init');
 Route::get('api/coinbase/printpostdata', 'CoinbaseAPIController@printpostdata');
 Route::get('api/coinbase/charge', 'CoinbaseAPIController@Charges');
+Route::get('api/coinbase/checkout', 'CoinbaseAPIController@Checkout');
 Route::get('api/coinbase/update', 'CoinbaseAPIController@update');
 Route::get('api/coinbase/delete', 'CoinbaseAPIController@delete');
