@@ -15,7 +15,7 @@ class CoinbaseAPIController extends Controller
      *
      **/
 
-    public $apiKey = "bd96d073-c822-4490-8493-0751a51cce56";
+    private $apiKey = "bd96d073-c822-4490-8493-0751a51cce56";
 
     public function __construct($apiKey){
         $this->apiKey = $apiKey;
