@@ -27,7 +27,7 @@ class CoinbaseAPIController extends Controller
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         $headers = array();
         $headers[] = "Content-Type: application/json";
-        $headers[] = "X-CC-Api-Key: {$this->apiKey}";
+        $headers[] = "X-CC-Api-Key: bd96d073-c822-4490-8493-0751a51cce56";
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
         $result = curl_exec($ch);
         if (curl_errno($ch)) {
@@ -43,7 +43,7 @@ class CoinbaseAPIController extends Controller
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         $headers = array();
         $headers[] = "Content-Type: application/json";
-        $headers[] = "X-CC-Api-Key: {$this->apiKey}";
+        $headers[] = "X-CC-Api-Key: bd96d073-c822-4490-8493-0751a51cce56";
         $headers[] = "X-CC-Version: 2018-03-22";
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
         $result = curl_exec($ch);
@@ -76,7 +76,7 @@ class CoinbaseAPIController extends Controller
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         $headers = array();
         $headers[] = "Content-Type: application/json";
-        $headers[] = "X-CC-Api-Key: {$this->apiKey}";
+        $headers[] = "X-CC-Api-Key: bd96d073-c822-4490-8493-0751a51cce56";
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
         $result = curl_exec($ch);
         if (curl_errno($ch)) {
@@ -93,7 +93,7 @@ class CoinbaseAPIController extends Controller
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         $headers = array();
         $headers[] = "Content-Type: application/json";
-        $headers[] = "X-CC-Api-Key: {$this->apiKey}";
+        $headers[] = "X-CC-Api-Key: bd96d073-c822-4490-8493-0751a51cce56";
         $headers[] = "X-CC-Version: 2018-03-22";
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
         $result = curl_exec($ch);
@@ -114,7 +114,7 @@ class CoinbaseAPIController extends Controller
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         $headers = array();
         $headers[] = "Content-Type: application/json";
-        $headers[] = "X-CC-Api-Key: {$this->apiKey}";
+        $headers[] = "X-CC-Api-Key: bd96d073-c822-4490-8493-0751a51cce56";
         $headers[] = "X-CC-Version: 2018-03-22";
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
         $result = curl_exec($ch);
